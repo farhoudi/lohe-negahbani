@@ -1,0 +1,48 @@
+/**
+ * @author Ali Farhoudi
+ */
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../dist/fonts/IRANSansWeb_Bold.eot);
+    src: url(../dist/fonts/IRANSansWeb_Bold.eot?#iefix) format("embedded-opentype"), url(../dist/fonts/IRANSansWeb_Bold.woff2) format("woff2"), url(../dist/fonts/IRANSansWeb_Bold.woff) format("woff"), url(../dist/fonts/IRANSansWeb_Bold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../dist/fonts/IRANSansWeb_Medium.eot);
+    src: url(../dist/fonts/IRANSansWeb_Medium.eot?#iefix) format("embedded-opentype"), url(../dist/fonts/IRANSansWeb_Medium.woff2) format("woff2"), url(../dist/fonts/IRANSansWeb_Medium.woff) format("woff"), url(../dist/fonts/IRANSansWeb_Medium.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url(../dist/fonts/IRANSansWeb_Light.eot);
+    src: url(../dist/fonts/IRANSansWeb_Light.eot?#iefix) format("embedded-opentype"), url(../dist/fonts/IRANSansWeb_Light.woff2) format("woff2"), url(../dist/fonts/IRANSansWeb_Light.woff) format("woff"), url(../dist/fonts/IRANSansWeb_Light.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url(../dist/fonts/IRANSansWeb_UltraLight.eot);
+    src: url(../dist/fonts/IRANSansWeb_UltraLight.eot?#iefix) format("embedded-opentype"), url(../dist/fonts/IRANSansWeb_UltraLight.woff2) format("woff2"), url(../dist/fonts/IRANSansWeb_UltraLight.woff) format("woff"), url(../dist/fonts/IRANSansWeb_UltraLight.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../dist/fonts/IRANSansWeb.eot);
+    src: url(../dist/fonts/IRANSansWeb.eot?#iefix) format("embedded-opentype"), url(../dist/fonts/IRANSansWeb.woff2) format("woff2"), url(../dist/fonts/IRANSansWeb.woff) format("woff"), url(../dist/fonts/IRANSansWeb.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: "byekan";
+    src: url('../dist/fonts/BYekan.woff');
+}
