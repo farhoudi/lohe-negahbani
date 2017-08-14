@@ -1,0 +1,845 @@
+- 16:31:11.109 INFO: --------------------------------------------------------
+- 16:31:11.109 INFO: Started application
+- 16:31:11.125 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 16:31:11.125 INFO: Log level = DEBUG4
+- 16:31:11.125 INFO: Starting Mongoose 3.9c web server
+- 16:31:11.125 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www
+- 16:31:11.125 INFO: Index files: index.html,index.php
+- 16:31:11.125 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 16:31:11.125 INFO: CGI pattern: **.php$
+- 16:31:11.125 INFO: Hide files patterns: 
+- 16:31:11.125 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 16:31:11.172 INFO: Web server url: http://127.0.0.1:30398/
+- 16:31:11.172 INFO: remote_debugging_port = 62524
+- 16:31:11.172 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=62524
+- 16:31:12.671 DEBUG: App::OnContextInitialized()
+- 16:31:12.671 DEBUG: Window max width/height = 1286/680
+- 16:31:12.671 DEBUG: GetBrowserWindow(): not found, hwnd = 459506
+- 16:31:12.671 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 16:31:12.671 DEBUG: BrowserWindow::CreateBrowserControl()
+- 16:31:12.671 DEBUG: StoreBrowserWindow(): hwnd = 459506
+- 16:31:12.016 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=0C0BCC89F31463C757F03CF8049142EB --mojo-platform-channel-handle=1360 /prefetch:2
+- 16:31:13.044 DEBUG: ClientHandler::OnAfterCreated()
+- 16:31:13.044 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 16:31:13.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=29ACE695B89B24C5F9DDC761A4CD6F83 --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=29ACE695B89B24C5F9DDC761A4CD6F83 --renderer-client-id=3 --mojo-platform-channel-handle=1620 /prefetch:1
+- 16:31:13.153 DEBUG: OnLoadingStateChange: loading=1, url=
+- 16:31:14.171 DEBUG: OnBrowserCreated()
+[0728/163119.330:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 16:31:19.707 INFO: GET 200 /style.css
+- 16:31:19.631 DEBUG: OnContextCreated()
+- 16:31:19.972 INFO: GET 200 /
+- 16:31:20.268 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30398/
+- 16:31:35.024 DEBUG: F5 pressed, reloading page
+- 16:31:35.024 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30398/
+- 16:31:36.773 INFO: GET 200 /
+- 16:31:36.682 DEBUG: OnContextCreated()
+- 16:31:36.789 INFO: GET 200 /style.css
+- 16:31:36.789 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30398/
+- 16:31:41.139 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30398/
+- 16:31:42.467 INFO: GET 200 /
+- 16:31:42.376 DEBUG: OnContextCreated()
+- 16:31:42.467 INFO: GET 200 /style.css
+- 16:31:42.483 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30398/
+- 16:31:44.417 DEBUG: WM_DESTROY
+- 16:31:44.417 DEBUG: RemoveBrowserWindow(): hwnd = 459506
+- 16:31:44.417 INFO: Stopping Mongoose web server
+- 16:31:44.417 DEBUG: Mongoose webserver stopped immediately
+- 16:31:44.448 DEBUG: OnBeforeClose() hwnd=590376
+- 16:31:44.448 DEBUG: RemoveBrowserWindow(): hwnd = 590376
+- 16:31:44.448 DEBUG: GetBrowserWindow(): not found, hwnd = 590376
+- 16:31:44.448 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 16:31:44.448 DEBUG: Calling CefQuitMessageLoop()
+- 16:31:44.373 DEBUG: OnBrowserDestroyed()
+- 16:31:44.589 INFO: Ended application
+- 16:31:44.589 INFO: --------------------------------------------------------
+- 16:31:48.046 INFO: --------------------------------------------------------
+- 16:31:48.046 INFO: Started application
+- 16:31:48.046 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 16:31:48.046 INFO: Log level = DEBUG4
+- 16:31:48.046 INFO: Starting Mongoose 3.9c web server
+- 16:31:48.046 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\my_app
+- 16:31:48.046 INFO: Index files: index.html,index.php
+- 16:31:48.046 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 16:31:48.046 INFO: CGI pattern: **.php$
+- 16:31:48.046 INFO: Hide files patterns: 
+- 16:31:48.046 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 16:31:48.046 INFO: Web server url: http://127.0.0.1:30407/
+- 16:31:48.046 INFO: remote_debugging_port = 63314
+- 16:31:48.046 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=63314
+- 16:31:48.109 DEBUG: App::OnContextInitialized()
+- 16:31:48.109 DEBUG: Window max width/height = 1286/680
+- 16:31:48.109 DEBUG: GetBrowserWindow(): not found, hwnd = 1639068
+- 16:31:48.109 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 16:31:48.109 DEBUG: BrowserWindow::CreateBrowserControl()
+- 16:31:48.109 DEBUG: StoreBrowserWindow(): hwnd = 1639068
+- 16:31:48.140 DEBUG: ClientHandler::OnAfterCreated()
+- 16:31:48.140 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 16:31:48.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=8DA49A23077198F399AD6A7D29F28E1D --mojo-platform-channel-handle=1364 /prefetch:2
+- 16:31:48.171 DEBUG: OnLoadingStateChange: loading=1, url=
+- 16:31:48.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=C245E700DC5EE78BAA7D5765108B42EE --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=C245E700DC5EE78BAA7D5765108B42EE --renderer-client-id=3 --mojo-platform-channel-handle=1636 /prefetch:1
+- 16:31:48.047 DEBUG: OnBrowserCreated()
+[0728/163148.217:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 16:31:48.265 INFO: GET 200 /
+- 16:31:48.421 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30407/
+- 16:32:18.030 DEBUG: F5 pressed, reloading page
+- 16:32:18.030 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30407/
+- 16:32:18.591 INFO: GET 200 /
+Created()
+- 16:32:19.106 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30407/
+- 16:32:26.313 DEBUG: WM_DESTROY
+- 16:32:26.313 DEBUG: RemoveBrowserWindow(): hwnd = 1639068
+- 16:32:26.345 INFO: Stopping Mongoose web server
+- 16:32:26.345 DEBUG: Mongoose webserver stopped immediately
+- 16:32:26.345 DEBUG: OnBeforeClose() hwnd=525042
+- 16:32:26.345 DEBUG: RemoveBrowserWindow(): hwnd = 525042
+- 16:32:26.345 DEBUG: GetBrowserWindow(): not found, hwnd = 525042
+- 16:32:26.345 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 16:32:26.345 DEBUG: Calling CefQuitMessageLoop()
+- 16:32:26.376 INFO: Ended application
+- 16:32:26.376 INFO: --------------------------------------------------------
+- 16:48:28.031 INFO: --------------------------------------------------------
+- 16:48:28.031 INFO: Started application
+- 16:48:28.031 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 16:48:28.031 INFO: Log level = DEBUG4
+- 16:48:28.031 INFO: Starting Mongoose 3.9c web server
+- 16:48:28.031 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\payment\public
+- 16:48:28.031 INFO: Index files: index.html,index.php
+- 16:48:28.031 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 16:48:28.031 INFO: CGI pattern: **.php$
+- 16:48:28.031 INFO: Hide files patterns: 
+- 16:48:28.031 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 16:48:28.046 INFO: Web server url: http://127.0.0.1:30542/
+- 16:48:28.046 INFO: remote_debugging_port = 62767
+- 16:48:28.046 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=62767
+- 16:48:28.093 DEBUG: App::OnContextInitialized()
+- 16:48:28.093 DEBUG: Window max width/height = 1286/680
+- 16:48:28.093 DEBUG: GetBrowserWindow(): not found, hwnd = 591666
+- 16:48:28.093 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 16:48:28.093 DEBUG: BrowserWindow::CreateBrowserControl()
+- 16:48:28.109 DEBUG: StoreBrowserWindow(): hwnd = 591666
+- 16:48:28.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=E75F777CC18488A26EBC85169718F05D --mojo-platform-channel-handle=1356 /prefetch:2
+- 16:48:28.156 DEBUG: ClientHandler::OnAfterCreated()
+- 16:48:28.156 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 16:48:28.171 DEBUG: OnLoadingStateChange: loading=1, url=
+- 16:48:28.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=55BAD37BAE1CDB538E4EA0C1AC020A79 --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=55BAD37BAE1CDB538E4EA0C1AC020A79 --renderer-client-id=3 --mojo-platform-channel-handle=1636 /prefetch:1
+- 16:48:28.047 DEBUG: OnBrowserCreated()
+[0728/164828.894:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 16:48:36.472 INFO: GET 302 /
+- 16:48:36.519 INFO: GET 404 /login
+- 16:48:36.612 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30542/login
+- 16:48:51.526 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30542/login
+- 16:48:51.526 INFO: GET 404 /login
+- 16:48:51.542 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30542/login
+- 16:50:12.037 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30542/login
+- 16:50:12.052 INFO: GET 404 /login
+- 16:50:12.068 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30542/login
+- 16:50:16.531 DEBUG: OnBeforeClose() hwnd=983702
+- 16:50:16.531 DEBUG: RemoveBrowserWindow(): hwnd = 983702
+- 16:50:16.531 DEBUG: GetBrowserWindow(): not found, hwnd = 983702
+- 16:50:16.531 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 16:50:21.546 INFO: --------------------------------------------------------
+- 16:50:21.546 INFO: Started application
+- 16:50:21.562 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 16:50:21.562 INFO: Log level = DEBUG4
+- 16:50:21.562 INFO: Starting Mongoose 3.9c web server
+- 16:50:21.562 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\payment\public
+- 16:50:21.562 INFO: Index files: index.html,index.php
+- 16:50:21.562 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 16:50:21.562 INFO: CGI pattern: **.php$
+- 16:50:21.562 INFO: Hide files patterns: 
+- 16:50:21.562 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 16:50:21.562 INFO: Web server url: http://127.0.0.1:30629/
+- 16:50:21.562 INFO: remote_debugging_port = 61416
+- 16:50:21.562 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=61416
+- 16:50:22.640 DEBUG: App::OnContextInitialized()
+- 16:50:22.640 DEBUG: Window max width/height = 1286/680
+- 16:50:22.655 DEBUG: GetBrowserWindow(): not found, hwnd = 2032230
+- 16:50:22.655 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 16:50:22.655 DEBUG: BrowserWindow::CreateBrowserControl()
+- 16:50:22.655 DEBUG: StoreBrowserWindow(): hwnd = 2032230
+- 16:50:22.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=E285D2F04BA47178455DEDCD45D57A6A --mojo-platform-channel-handle=1348 /prefetch:2
+- 16:50:22.702 DEBUG: ClientHandler::OnAfterCreated()
+- 16:50:22.702 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 16:50:22.718 DEBUG: OnLoadingStateChange: loading=1, url=
+- 16:50:22.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=D32C407AB9F9955CE87678F990BD13E3 --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=D32C407AB9F9955CE87678F990BD13E3 --renderer-client-id=3 --mojo-platform-channel-handle=1620 /prefetch:1
+[0728/165022.189:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 16:50:22.047 DEBUG: OnBrowserCreated()
+- 16:50:22.092 INFO: GET 302 /
+- 16:50:23.184 INFO: GET 200 /login
+- 16:50:23.340 INFO: GET 200 /css/bootstrap.min.css
+- 16:50:23.356 INFO: GET 200 /css/styles.css
+- 16:50:23.387 INFO: GET 200 /css/fonts.css
+- 16:50:23.716 DEBUG: OnContextCreated()
+- 16:50:23.496 INFO: GET 200 /js/bootstrap.min.js
+- 16:50:24.120 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/165024.634:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:30629/js/jquery-1.11.1.min.js (1)
+[0728/165024.716:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:30629/js/bootstrap.min.js (6)
+- 16:50:24.323 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30629/login
+- 16:50:33.589 DEBUG: WM_DESTROY
+- 16:50:33.589 DEBUG: RemoveBrowserWindow(): hwnd = 2032230
+- 16:50:33.589 INFO: Stopping Mongoose web server
+- 16:50:33.589 DEBUG: Mongoose webserver stopped immediately
+- 16:50:33.589 DEBUG: OnBeforeClose() hwnd=1049734
+- 16:50:33.589 DEBUG: RemoveBrowserWindow(): hwnd = 1049734
+- 16:50:33.589 DEBUG: GetBrowserWindow(): not found, hwnd = 1049734
+- 16:50:33.589 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 16:50:33.589 DEBUG: Calling CefQuitMessageLoop()
+- 16:50:34.792 INFO: Ended application
+- 16:50:34.792 INFO: --------------------------------------------------------
+- 16:50:35.015 INFO: --------------------------------------------------------
+- 16:50:35.015 INFO: Started application
+- 16:50:35.015 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 16:50:35.015 INFO: Log level = DEBUG4
+- 16:50:35.015 INFO: Starting Mongoose 3.9c web server
+- 16:50:35.015 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\payment\public
+- 16:50:35.015 INFO: Index files: index.html,index.php
+- 16:50:35.015 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 16:50:35.015 INFO: CGI pattern: **.php$
+- 16:50:35.015 INFO: Hide files patterns: 
+- 16:50:35.015 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 16:50:35.031 INFO: Web server url: http://127.0.0.1:30637/
+- 16:50:35.031 INFO: remote_debugging_port = 61629
+- 16:50:35.031 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=61629
+- 16:50:35.078 DEBUG: App::OnContextInitialized()
+- 16:50:35.078 DEBUG: Window max width/height = 1286/680
+- 16:50:35.093 DEBUG: GetBrowserWindow(): not found, hwnd = 591290
+- 16:50:35.093 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 16:50:35.093 DEBUG: BrowserWindow::CreateBrowserControl()
+- 16:50:35.093 DEBUG: StoreBrowserWindow(): hwnd = 591290
+- 16:50:35.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=A7D81580FBBC369CB21F154A86E342A7 --mojo-platform-channel-handle=1368 /prefetch:2
+- 16:50:35.124 DEBUG: ClientHandler::OnAfterCreated()
+- 16:50:35.124 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 16:50:35.140 DEBUG: OnLoadingStateChange: loading=1, url=
+- 16:50:35.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=F9EAC4AD234A76D22A95FF73C44356B0 --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=F9EAC4AD234A76D22A95FF73C44356B0 --renderer-client-id=3 --mojo-platform-channel-handle=1636 /prefetch:1
+- 16:50:35.031 DEBUG: OnBrowserCreated()
+[0728/165035.793:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 16:50:36.514 INFO: GET 302 /
+- 16:50:36.811 INFO: GET 200 /css/bootstrap.min.css
+- 16:50:36.811 INFO: GET 200 /login
+- 16:50:36.826 INFO: GET 200 /css/styles.css
+- 16:50:36.686 DEBUG: OnContextCreated()
+- 16:50:36.889 INFO: GET 200 /css/fonts.css
+- 16:50:36.904 INFO: GET 200 /js/bootstrap.min.js
+- 16:50:36.107 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/165036.707:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:30637/js/jquery-1.11.1.min.js (1)
+[0728/165036.711:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:30637/js/bootstrap.min.js (6)
+- 16:50:36.123 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30637/login
+- 16:50:48.197 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30637/login
+- 16:50:49.274 INFO: POST 200 /login
+- 16:50:49.133 DEBUG: OnContextCreated()
+- 16:50:50.617 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30637/login
+- 16:50:57.964 DEBUG: WM_DESTROY
+- 16:50:57.964 DEBUG: RemoveBrowserWindow(): hwnd = 591290
+- 16:50:57.964 INFO: Stopping Mongoose web server
+- 16:50:57.964 DEBUG: Mongoose webserver stopped immediately
+- 16:50:57.964 DEBUG: OnBeforeClose() hwnd=2097766
+- 16:50:57.964 DEBUG: RemoveBrowserWindow(): hwnd = 2097766
+- 16:50:57.964 DEBUG: GetBrowserWindow(): not found, hwnd = 2097766
+- 16:50:57.964 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 16:50:57.964 DEBUG: Calling CefQuitMessageLoop()
+- 16:50:57.339 INFO: Ended application
+- 16:50:57.339 INFO: --------------------------------------------------------
+- 16:55:20.046 INFO: --------------------------------------------------------
+- 16:55:20.046 INFO: Started application
+- 16:55:20.046 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 16:55:20.046 INFO: Log level = DEBUG4
+- 16:55:20.046 INFO: Starting Mongoose 3.9c web server
+- 16:55:20.046 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\payment\public
+- 16:55:20.046 INFO: Index files: index.html,index.php
+- 16:55:20.046 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 16:55:20.046 INFO: CGI pattern: **.php$
+- 16:55:20.046 INFO: Hide files patterns: 
+- 16:55:20.046 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 16:55:20.046 INFO: Web server url: http://127.0.0.1:30721/
+- 16:55:20.046 INFO: remote_debugging_port = 57720
+- 16:55:20.046 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=57720
+- 16:55:20.109 DEBUG: App::OnContextInitialized()
+- 16:55:20.109 DEBUG: Window max width/height = 1286/680
+- 16:55:20.109 DEBUG: GetBrowserWindow(): not found, hwnd = 656164
+- 16:55:20.109 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 16:55:20.109 DEBUG: BrowserWindow::CreateBrowserControl()
+- 16:55:20.109 DEBUG: StoreBrowserWindow(): hwnd = 656164
+- 16:55:21.140 DEBUG: ClientHandler::OnAfterCreated()
+- 16:55:21.140 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 16:55:21.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=55D8A7CEBA5771C6F68846DAE2EA0530 --mojo-platform-channel-handle=1360 /prefetch:2
+- 16:55:21.156 DEBUG: OnLoadingStateChange: loading=1, url=
+- 16:55:21.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=3D61A55CB46AEE025AA9E236E70E5B56 --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=3D61A55CB46AEE025AA9E236E70E5B56 --renderer-client-id=3 --mojo-platform-channel-handle=1644 /prefetch:1
+- 16:55:21.031 DEBUG: OnBrowserCreated()
+[0728/165521.127:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 16:55:21.811 INFO: GET 302 /
+- 16:55:21.060 INFO: GET 200 /css/styles.css
+- 16:55:21.060 INFO: GET 200 /css/bootstrap.min.css
+- 16:55:21.060 INFO: GET 200 /css/fonts.css
+- 16:55:21.076 INFO: GET 200 /login
+- 16:55:21.092 INFO: GET 200 /js/bootstrap.min.js
+- 16:55:22.967 DEBUG: OnContextCreated()
+- 16:55:22.326 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/165522.188:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:30721/js/jquery-1.11.1.min.js (1)
+[0728/165522.193:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:30721/js/bootstrap.min.js (6)
+- 16:55:22.326 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30721/login
+- 16:55:27.895 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30721/login
+- 16:55:28.082 DEBUG: OnContextCreated()
+- 16:55:28.285 INFO: POST 200 /login
+- 16:55:28.363 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30721/login
+- 16:55:31.013 DEBUG: WM_DESTROY
+- 16:55:31.013 DEBUG: RemoveBrowserWindow(): hwnd = 656164
+- 16:55:31.013 INFO: Stopping Mongoose web server
+- 16:55:31.013 DEBUG: Mongoose webserver stopped immediately
+- 16:55:31.029 DEBUG: OnBeforeClose() hwnd=3672332
+- 16:55:31.029 DEBUG: RemoveBrowserWindow(): hwnd = 3672332
+- 16:55:31.029 DEBUG: GetBrowserWindow(): not found, hwnd = 3672332
+- 16:55:31.029 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 16:55:31.029 DEBUG: Calling CefQuitMessageLoop()
+- 16:55:31.857 DEBUG: OnBrowserDestroyed()
+- 16:55:32.216 INFO: Ended application
+- 16:55:32.216 INFO: --------------------------------------------------------
+- 16:55:45.032 INFO: --------------------------------------------------------
+- 16:55:45.032 INFO: Started application
+- 16:55:45.047 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 16:55:45.047 INFO: Log level = DEBUG4
+- 16:55:45.047 INFO: Starting Mongoose 3.9c web server
+- 16:55:45.047 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\payment\public
+- 16:55:45.047 INFO: Index files: index.html,index.php
+- 16:55:45.047 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 16:55:45.047 INFO: CGI pattern: **.php$
+- 16:55:45.047 INFO: Hide files patterns: 
+- 16:55:45.047 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 16:55:45.047 INFO: Web server url: http://127.0.0.1:30731/
+- 16:55:45.047 INFO: remote_debugging_port = 63735
+- 16:55:45.047 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=63735
+- 16:55:45.110 DEBUG: App::OnContextInitialized()
+- 16:55:45.110 DEBUG: Window max width/height = 1286/680
+- 16:55:45.125 DEBUG: GetBrowserWindow(): not found, hwnd = 1049236
+- 16:55:45.125 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 16:55:45.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 16:55:45.125 DEBUG: StoreBrowserWindow(): hwnd = 1049236
+- 16:55:45.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=E5F4900F845367E683D34AF611AD0535 --mojo-platform-channel-handle=1360 /prefetch:2
+- 16:55:45.156 DEBUG: ClientHandler::OnAfterCreated()
+- 16:55:45.156 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 16:55:45.172 DEBUG: OnLoadingStateChange: loading=1, url=
+- 16:55:45.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=5F814762540D495B240D3D19293B6F25 --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=5F814762540D495B240D3D19293B6F25 --renderer-client-id=3 --mojo-platform-channel-handle=1636 /prefetch:1
+- 16:55:45.062 DEBUG: OnBrowserCreated()
+[0728/165545.558:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 16:55:45.546 INFO: GET 302 /
+- 16:55:46.749 INFO: GET 200 /css/styles.css
+- 16:55:46.765 INFO: GET 200 /login
+- 16:55:46.765 INFO: GET 200 /css/bootstrap.min.css
+- 16:55:46.765 INFO: GET 200 /css/fonts.css
+- 16:55:46.592 DEBUG: OnContextCreated()
+- 16:55:46.780 INFO: GET 200 /js/bootstrap.min.js
+- 16:55:46.999 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/165546.289:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:30731/js/jquery-1.11.1.min.js (1)
+[0728/165546.292:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:30731/js/bootstrap.min.js (6)
+- 16:55:46.999 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30731/login
+- 16:55:49.760 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30731/login
+- 16:55:49.837 DEBUG: OnContextCreated()
+- 16:55:49.025 INFO: POST 200 /login
+- 16:55:49.119 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30731/login
+- 16:56:00.101 DEBUG: F5 pressed, reloading page
+- 16:56:05.592 DEBUG: F5 pressed, reloading page
+- 16:56:06.263 DEBUG: F5 pressed, reloading page
+- 16:56:15.436 DEBUG: F5 pressed, reloading page
+- 16:56:17.731 DEBUG: F5 pressed, reloading page
+- 16:56:17.090 DEBUG: F5 pressed, reloading page
+- 16:56:26.263 DEBUG: F5 pressed, reloading page
+- 16:56:27.027 DEBUG: F5 pressed, reloading page
+- 16:56:54.719 DEBUG: WM_DESTROY
+- 16:56:54.719 DEBUG: RemoveBrowserWindow(): hwnd = 1049236
+- 16:56:54.719 INFO: Stopping Mongoose web server
+- 16:56:54.719 DEBUG: Mongoose webserver stopped immediately
+- 16:56:54.719 DEBUG: OnBeforeClose() hwnd=2359910
+- 16:56:54.734 DEBUG: RemoveBrowserWindow(): hwnd = 2359910
+- 16:56:54.734 DEBUG: GetBrowserWindow(): not found, hwnd = 2359910
+- 16:56:54.734 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 16:56:54.734 DEBUG: Calling CefQuitMessageLoop()
+- 16:56:54.797 INFO: Ended application
+- 16:56:54.797 INFO: --------------------------------------------------------
+- 16:57:09.031 INFO: --------------------------------------------------------
+- 16:57:09.031 INFO: Started application
+- 16:57:09.031 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 16:57:09.031 INFO: Log level = DEBUG4
+- 16:57:09.031 INFO: Starting Mongoose 3.9c web server
+- 16:57:09.031 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\payment\public
+- 16:57:09.031 INFO: Index files: index.html,index.php
+- 16:57:09.031 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 16:57:09.047 INFO: CGI pattern: **.php$
+- 16:57:09.047 INFO: Hide files patterns: 
+- 16:57:09.047 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 16:57:09.047 INFO: Web server url: http://127.0.0.1:30741/
+- 16:57:09.047 INFO: remote_debugging_port = 60337
+- 16:57:09.047 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=60337
+- 16:57:09.109 DEBUG: App::OnContextInitialized()
+- 16:57:09.109 DEBUG: Window max width/height = 1286/680
+- 16:57:09.109 DEBUG: GetBrowserWindow(): not found, hwnd = 1245846
+- 16:57:09.109 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 16:57:09.109 DEBUG: BrowserWindow::CreateBrowserControl()
+- 16:57:09.109 DEBUG: StoreBrowserWindow(): hwnd = 1245846
+- 16:57:09.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=F8677FE3C10CFEB12790861EFB9D9A89 --mojo-platform-channel-handle=1372 /prefetch:2
+- 16:57:09.140 DEBUG: ClientHandler::OnAfterCreated()
+- 16:57:09.140 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 16:57:09.156 DEBUG: OnLoadingStateChange: loading=1, url=
+- 16:57:09.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=F9D0BDEE2DD491C724E6DFC59F43ABB0 --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=F9D0BDEE2DD491C724E6DFC59F43ABB0 --renderer-client-id=3 --mojo-platform-channel-handle=1640 /prefetch:1
+- 16:57:09.047 DEBUG: OnBrowserCreated()
+[0728/165709.843:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 16:57:13.853 INFO: GET 302 /
+- 16:57:13.150 INFO: GET 200 /css/styles.css
+- 16:57:13.165 INFO: GET 200 /css/bootstrap.min.css
+- 16:57:13.165 INFO: GET 200 /css/fonts.css
+- 16:57:13.181 INFO: GET 200 /login
+- 16:57:13.088 DEBUG: OnContextCreated()
+- 16:57:13.274 INFO: GET 200 /js/bootstrap.min.js
+- 16:57:14.524 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/165714.135:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:30741/js/jquery-1.11.1.min.js (1)
+[0728/165714.143:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:30741/js/bootstrap.min.js (6)
+- 16:57:14.540 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30741/login
+- 16:57:18.642 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30741/login
+- 16:57:19.267 DEBUG: OnContextCreated()
+- 16:57:19.438 INFO: POST 200 /login
+- 16:57:19.547 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30741/login
+- 16:57:26.160 DEBUG: WM_DESTROY
+- 16:57:26.176 DEBUG: RemoveBrowserWindow(): hwnd = 1245846
+- 16:57:26.176 INFO: Stopping Mongoose web server
+- 16:57:26.176 DEBUG: Mongoose webserver stopped immediately
+- 16:57:26.176 DEBUG: OnBeforeClose() hwnd=2425446
+- 16:57:26.176 DEBUG: RemoveBrowserWindow(): hwnd = 2425446
+- 16:57:26.176 DEBUG: GetBrowserWindow(): not found, hwnd = 2425446
+- 16:57:26.176 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 16:57:26.176 DEBUG: Calling CefQuitMessageLoop()
+- 16:57:27.472 INFO: Ended application
+- 16:57:27.472 INFO: --------------------------------------------------------
+- 16:58:53.031 INFO: --------------------------------------------------------
+- 16:58:53.031 INFO: Started application
+- 16:58:53.031 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 16:58:53.031 INFO: Log level = DEBUG4
+- 16:58:53.031 INFO: Starting Mongoose 3.9c web server
+- 16:58:53.031 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\payment\public
+- 16:58:53.031 INFO: Index files: index.html,index.php
+- 16:58:53.031 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 16:58:53.031 INFO: CGI pattern: **.php$
+- 16:58:53.031 INFO: Hide files patterns: 
+- 16:58:53.031 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 16:58:53.047 INFO: Web server url: http://127.0.0.1:30754/
+- 16:58:53.047 INFO: remote_debugging_port = 55886
+- 16:58:53.047 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=55886
+- 16:58:54.094 DEBUG: App::OnContextInitialized()
+- 16:58:54.109 DEBUG: Window max width/height = 1286/680
+- 16:58:54.109 DEBUG: GetBrowserWindow(): not found, hwnd = 591652
+- 16:58:54.109 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 16:58:54.109 DEBUG: BrowserWindow::CreateBrowserControl()
+- 16:58:54.109 DEBUG: StoreBrowserWindow(): hwnd = 591652
+- 16:58:54.016 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=1B81CDD6563972491DBB5738C5DE7933 --mojo-platform-channel-handle=1360 /prefetch:2
+- 16:58:54.141 DEBUG: ClientHandler::OnAfterCreated()
+- 16:58:54.141 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 16:58:54.156 DEBUG: OnLoadingStateChange: loading=1, url=
+- 16:58:54.015 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=744D7A215697E64B8C7A63B724B795CE --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=744D7A215697E64B8C7A63B724B795CE --renderer-client-id=3 --mojo-platform-channel-handle=1636 /prefetch:1
+- 16:58:54.047 DEBUG: OnBrowserCreated()
+[0728/165854.156:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 16:58:54.531 INFO: GET 302 /
+- 16:58:54.780 INFO: GET 200 /css/styles.css
+- 16:58:54.796 INFO: GET 200 /css/bootstrap.min.css
+- 16:58:54.796 INFO: GET 200 /css/fonts.css
+- 16:58:54.796 INFO: GET 200 /login
+- 16:58:54.827 INFO: GET 200 /js/bootstrap.min.js
+- 16:58:54.702 DEBUG: OnContextCreated()
+- 16:58:54.045 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/165854.958:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:30754/js/jquery-1.11.1.min.js (1)
+[0728/165854.962:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:30754/js/bootstrap.min.js (6)
+- 16:58:54.045 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30754/login
+- 16:58:59.632 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30754/login
+- 16:59:00.178 INFO: POST 302 /login
+- 16:59:00.224 DEBUG: OnContextCreated()
+- 16:59:00.396 INFO: GET 200 /login
+- 16:59:00.630 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/165900.549:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:30754/js/jquery-1.11.1.min.js (1)
+[0728/165900.569:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:30754/js/bootstrap.min.js (6)
+- 16:59:00.661 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30754/login
+- 16:59:06.636 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30754/login
+- 16:59:06.011 INFO: POST 302 /login
+- 16:59:07.041 DEBUG: OnContextCreated()
+- 16:59:07.229 INFO: GET 200 /login
+- 16:59:07.447 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/165907.368:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:30754/js/jquery-1.11.1.min.js (1)
+[0728/165907.369:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:30754/js/bootstrap.min.js (6)
+- 16:59:07.463 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30754/login
+- 17:02:05.476 DEBUG: F12 pressed, opening developer tools
+- 17:02:05.538 DEBUG: ClientHandler::OnAfterCreated()
+- 17:02:05.538 DEBUG: GetBrowserWindow(): not found, hwnd = 2754790
+- 17:02:05.538 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 17:02:05.538 DEBUG: StoreBrowserWindow(): hwnd = 2754790
+- 17:02:05.538 DEBUG: Centering popup window relative to its parent
+- 17:02:05.616 DEBUG: OnLoadingStateChange: loading=1, url=
+- 17:02:05.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=286503A8C75814DA44D68721A11B5B83 --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=286503A8C75814DA44D68721A11B5B83 --renderer-client-id=4 --mojo-platform-channel-handle=996 /prefetch:1
+- 17:02:05.031 DEBUG: OnBrowserCreated()
+- 17:02:05.094 DEBUG: OnContextCreated()
+- 17:02:07.691 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+- 17:02:18.377 DEBUG: OnBeforeClose() hwnd=2754790
+- 17:02:18.393 DEBUG: RemoveBrowserWindow(): hwnd = 2754790
+- 17:02:19.110 DEBUG: WM_DESTROY
+- 17:02:19.110 DEBUG: RemoveBrowserWindow(): hwnd = 591652
+- 17:02:19.110 INFO: Stopping Mongoose web server
+- 17:02:19.126 DEBUG: Mongoose webserver stopped immediately
+- 17:02:19.126 DEBUG: OnBeforeClose() hwnd=1837306
+- 17:02:19.126 DEBUG: RemoveBrowserWindow(): hwnd = 1837306
+- 17:02:19.126 DEBUG: GetBrowserWindow(): not found, hwnd = 1837306
+- 17:02:19.126 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 17:02:19.126 DEBUG: Calling CefQuitMessageLoop()
+- 17:02:19.329 INFO: Ended application
+- 17:02:19.329 INFO: --------------------------------------------------------
+- 17:18:47.094 INFO: --------------------------------------------------------
+- 17:18:47.094 INFO: Started application
+- 17:18:47.094 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 17:18:47.094 INFO: Log level = DEBUG4
+- 17:18:47.094 INFO: Starting Mongoose 3.9c web server
+- 17:18:47.094 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\payment\public
+- 17:18:47.094 INFO: Index files: index.html,index.php
+- 17:18:47.109 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 17:18:47.109 INFO: CGI pattern: **.php$
+- 17:18:47.109 INFO: Hide files patterns: 
+- 17:18:47.109 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 17:18:47.109 INFO: Web server url: http://127.0.0.1:30948/
+- 17:18:47.109 INFO: remote_debugging_port = 50958
+- 17:18:47.109 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=50958
+- 17:18:47.172 DEBUG: App::OnContextInitialized()
+- 17:18:47.172 DEBUG: Window max width/height = 1286/680
+- 17:18:47.172 DEBUG: GetBrowserWindow(): not found, hwnd = 3213352
+- 17:18:47.172 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 17:18:47.172 DEBUG: BrowserWindow::CreateBrowserControl()
+- 17:18:47.172 DEBUG: StoreBrowserWindow(): hwnd = 3213352
+- 17:18:47.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=FD87B6236B54CDA31023BBF4CC1E41DC --mojo-platform-channel-handle=1360 /prefetch:2
+[0728/171847.973:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 17:18:47.297 DEBUG: ClientHandler::OnAfterCreated()
+- 17:18:47.297 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 17:18:48.312 DEBUG: OnLoadingStateChange: loading=1, url=
+- 17:18:48.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=18F04D0312414413AAFC3ECFEF108A6E --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=18F04D0312414413AAFC3ECFEF108A6E --renderer-client-id=3 --mojo-platform-channel-handle=1652 /prefetch:1
+- 17:18:48.032 DEBUG: OnBrowserCreated()
+- 17:18:48.092 INFO: GET 302 /
+- 17:18:49.701 INFO: GET 200 /css/bootstrap.min.css
+- 17:18:49.701 INFO: GET 200 /login
+- 17:18:49.701 INFO: GET 200 /css/styles.css
+- 17:18:49.451 DEBUG: OnContextCreated()
+- 17:18:49.794 INFO: GET 200 /js/bootstrap.min.js
+- 17:18:49.794 INFO: GET 200 /css/fonts.css
+- 17:18:49.262 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/171849.967:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:30948/js/jquery-1.11.1.min.js (1)
+[0728/171849.971:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:30948/js/bootstrap.min.js (6)
+- 17:18:49.278 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30948/login
+- 17:18:55.504 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30948/login
+- 17:18:55.253 INFO: POST 302 /login
+- 17:18:56.393 DEBUG: OnContextCreated()
+- 17:18:56.752 INFO: GET 200 /
+- 17:18:56.752 INFO: GET 200 /css/bootstrap-slider.css
+- 17:18:56.783 INFO: GET 200 /js/script_footer.js
+- 17:18:56.830 INFO: GET 200 /js/jquery-1.8.3.min.js
+- 17:18:56.861 INFO: GET 200 /fonts/glyphicons-halflings-regular.woff
+- 17:18:56.173 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30948/
+- 17:19:02.399 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30948/
+- 17:19:02.352 DEBUG: OnContextCreated()
+- 17:19:02.695 INFO: GET 200 /dashboard
+- 17:19:02.820 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30948/dashboard
+- 17:19:04.505 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30948/dashboard
+- 17:19:04.552 DEBUG: OnContextCreated()
+- 17:19:04.911 INFO: GET 200 /transactions?status=fail
+- 17:19:04.958 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30948/transactions?status=fail
+- 17:19:14.973 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30948/transactions?status=fail
+- 17:19:14.677 DEBUG: OnContextCreated()
+- 17:19:14.160 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30948/dashboard
+- 17:19:17.030 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30948/dashboard
+- 17:19:18.984 DEBUG: OnContextCreated()
+- 17:19:18.327 INFO: GET 200 /accounts
+- 17:19:18.374 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30948/accounts
+- 17:19:22.210 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:30948/accounts
+- 17:19:22.882 DEBUG: OnContextCreated()
+- 17:19:23.319 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:30948/dashboard
+- 17:19:25.394 DEBUG: WM_DESTROY
+- 17:19:25.394 DEBUG: RemoveBrowserWindow(): hwnd = 3213352
+- 17:19:25.394 INFO: Stopping Mongoose web server
+- 17:19:25.394 DEBUG: Mongoose webserver stopped immediately
+- 17:19:25.394 DEBUG: OnBeforeClose() hwnd=264044
+- 17:19:25.409 DEBUG: RemoveBrowserWindow(): hwnd = 264044
+- 17:19:25.409 DEBUG: GetBrowserWindow(): not found, hwnd = 264044
+- 17:19:25.409 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 17:19:25.409 DEBUG: Calling CefQuitMessageLoop()
+- 17:19:25.487 INFO: Ended application
+- 17:19:25.487 INFO: --------------------------------------------------------
+- 17:20:30.000 INFO: --------------------------------------------------------
+- 17:20:30.000 INFO: Started application
+- 17:20:30.000 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 17:20:30.000 INFO: Log level = DEBUG4
+- 17:20:30.000 INFO: Starting Mongoose 3.9c web server
+- 17:20:30.000 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\payment\public
+- 17:20:30.000 INFO: Index files: index.html,index.php
+- 17:20:30.000 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 17:20:30.000 INFO: CGI pattern: **.php$
+- 17:20:30.000 INFO: Hide files patterns: 
+- 17:20:30.000 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 17:20:30.015 INFO: Web server url: http://127.0.0.1:31028/
+- 17:20:30.015 INFO: remote_debugging_port = 64557
+- 17:20:30.015 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=64557
+- 17:20:30.078 DEBUG: App::OnContextInitialized()
+- 17:20:30.078 DEBUG: Window max width/height = 1286/680
+- 17:20:30.078 DEBUG: GetBrowserWindow(): not found, hwnd = 1966456
+- 17:20:30.078 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 17:20:30.078 DEBUG: BrowserWindow::CreateBrowserControl()
+- 17:20:30.078 DEBUG: StoreBrowserWindow(): hwnd = 1966456
+- 17:20:30.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=12CE6E200B0673AF4716E3E18281E06F --mojo-platform-channel-handle=1336 /prefetch:2
+- 17:20:30.109 DEBUG: ClientHandler::OnAfterCreated()
+- 17:20:30.109 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 17:20:30.124 DEBUG: OnLoadingStateChange: loading=1, url=
+- 17:20:30.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=C9447920999050843506A2C5A0A6F04A --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=C9447920999050843506A2C5A0A6F04A --renderer-client-id=3 --mojo-platform-channel-handle=1624 /prefetch:1
+- 17:20:30.047 DEBUG: OnBrowserCreated()
+[0728/172030.664:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 17:20:31.982 INFO: GET 200 /css/bootstrap-slider.css
+- 17:20:31.982 INFO: GET 200 /css/styles.css
+- 17:20:31.998 INFO: GET 200 /css/bootstrap.min.css
+- 17:20:31.998 INFO: GET 200 /css/fonts.css
+- 17:20:31.014 INFO: GET 200 /
+- 17:20:31.045 INFO: GET 200 /fonts/glyphicons-halflings-regular.woff
+- 17:20:31.123 INFO: GET 200 /js/script_footer.js
+- 17:20:31.138 INFO: GET 200 /js/bootstrap.min.js
+- 17:20:31.154 INFO: GET 200 /js/jquery-1.8.3.min.js
+- 17:20:31.030 DEBUG: OnContextCreated()
+- 17:20:31.263 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:31028/
+- 17:20:35.428 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:31028/
+- 17:20:36.146 INFO: POST 302 /logout
+- 17:20:36.458 INFO: GET 302 /
+- 17:20:37.599 DEBUG: OnContextCreated()
+- 17:20:37.754 INFO: GET 200 /login
+- 17:20:37.020 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/172037.495:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:31028/js/jquery-1.11.1.min.js (1)
+[0728/172037.495:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:31028/js/bootstrap.min.js (6)
+- 17:20:37.020 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:31028/login
+- 17:20:38.940 DEBUG: WM_DESTROY
+- 17:20:38.940 DEBUG: RemoveBrowserWindow(): hwnd = 1966456
+- 17:20:38.940 INFO: Stopping Mongoose web server
+- 17:20:38.940 DEBUG: Mongoose webserver stopped immediately
+- 17:20:38.940 DEBUG: OnBeforeClose() hwnd=656788
+- 17:20:38.940 DEBUG: RemoveBrowserWindow(): hwnd = 656788
+- 17:20:38.940 DEBUG: GetBrowserWindow(): not found, hwnd = 656788
+- 17:20:38.940 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 17:20:38.940 DEBUG: Calling CefQuitMessageLoop()
+- 17:20:38.159 INFO: Ended application
+- 17:20:38.159 INFO: --------------------------------------------------------
+- 17:31:09.000 INFO: --------------------------------------------------------
+- 17:31:09.000 INFO: Started application
+- 17:31:09.000 INFO: Logging to: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log
+- 17:31:09.000 INFO: Log level = DEBUG4
+- 17:31:09.000 INFO: Starting Mongoose 3.9c web server
+- 17:31:09.000 INFO: WWW directory: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\www\payment\public
+- 17:31:09.000 INFO: Index files: index.html,index.php
+- 17:31:09.000 INFO: CGI interpreter: C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\php\php-cgi.exe
+- 17:31:09.000 INFO: CGI pattern: **.php$
+- 17:31:09.000 INFO: Hide files patterns: 
+- 17:31:09.000 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 17:31:09.000 INFO: Web server url: http://127.0.0.1:31161/
+- 17:31:09.016 INFO: remote_debugging_port = 49957
+- 17:31:09.016 DEBUG: Command line string for the browser process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --remote-debugging-port=49957
+- 17:31:09.063 DEBUG: App::OnContextInitialized()
+- 17:31:09.063 DEBUG: Window max width/height = 1286/680
+- 17:31:09.063 DEBUG: GetBrowserWindow(): not found, hwnd = 1049992
+- 17:31:09.063 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 17:31:09.063 DEBUG: BrowserWindow::CreateBrowserControl()
+- 17:31:09.063 DEBUG: StoreBrowserWindow(): hwnd = 1049992
+- 17:31:09.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --service-request-channel-token=FABABD90BB505740F970EE2C54C51B93 --mojo-platform-channel-handle=1352 /prefetch:2
+- 17:31:09.109 DEBUG: ClientHandler::OnAfterCreated()
+- 17:31:09.109 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 17:31:09.125 DEBUG: OnLoadingStateChange: loading=1, url=
+- 17:31:09.000 DEBUG: Command line string for the renderer process: "C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=256C44A82539BE5D324E307449042261 --lang=en-US --lang=en-US --log-file="C:\Users\Farhoudi\Desktop\phpdesktop-chrome-57.0-rc-php-7.1.3\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=256C44A82539BE5D324E307449042261 --renderer-client-id=3 --mojo-platform-channel-handle=1640 /prefetch:1
+[0728/173109.306:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 17:31:09.047 DEBUG: OnBrowserCreated()
+- 17:31:10.061 INFO: GET 302 /
+- 17:31:10.326 INFO: GET 200 /css/styles.css
+- 17:31:10.326 INFO: GET 200 /login
+- 17:31:10.342 INFO: GET 200 /css/bootstrap.min.css
+- 17:31:10.342 INFO: GET 200 /css/fonts.css
+- 17:31:10.357 INFO: GET 200 /js/bootstrap.min.js
+- 17:31:10.217 DEBUG: OnContextCreated()
+- 17:31:10.591 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/173110.718:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:31161/js/jquery-1.11.1.min.js (1)
+[0728/173110.722:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:31161/js/bootstrap.min.js (6)
+- 17:31:10.607 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:31161/login
+- 17:31:14.835 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:31161/login
+- 17:31:15.256 INFO: POST 302 /login
+- 17:31:15.537 DEBUG: OnContextCreated()
+- 17:31:15.708 INFO: GET 200 /css/bootstrap-slider.css
+- 17:31:15.708 INFO: GET 200 /
+- 17:31:15.739 INFO: GET 200 /fonts/glyphicons-halflings-regular.woff
+- 17:31:15.817 INFO: GET 200 /js/script_footer.js
+- 17:31:15.817 INFO: GET 200 /js/jquery-1.8.3.min.js
+- 17:31:16.911 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:31161/
+- 17:31:21.293 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:31161/
+- 17:31:21.730 INFO: POST 302 /logout
+- 17:31:22.964 INFO: GET 302 /
+- 17:31:22.026 DEBUG: OnContextCreated()
+- 17:31:22.182 INFO: GET 200 /login
+- 17:31:22.416 INFO: GET 200 /js/jquery-1.11.1.min.js
+[0728/173122.545:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: http://127.0.0.1:31161/js/jquery-1.11.1.min.js (1)
+[0728/173122.545:INFO:CONSOLE(6)] "Uncaught Error: Bootstrap's JavaScript requires jQuery", source: http://127.0.0.1:31161/js/bootstrap.min.js (6)
+- 17:31:22.432 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:31161/login
+- 17:31:23.820 DEBUG: WM_DESTROY
+- 17:31:23.820 DEBUG: RemoveBrowserWindow(): hwnd = 1049992
+- 17:31:23.820 INFO: Stopping Mongoose web server
+- 17:31:23.820 DEBUG: Mongoose webserver stopped immediately
+- 17:31:23.820 DEBUG: OnBeforeClose() hwnd=395138
+- 17:31:23.820 DEBUG: RemoveBrowserWindow(): hwnd = 395138
+- 17:31:23.820 DEBUG: GetBrowserWindow(): not found, hwnd = 395138
+- 17:31:23.820 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 17:31:23.820 DEBUG: Calling CefQuitMessageLoop()
+- 17:31:24.054 INFO: Ended application
+- 17:31:24.054 INFO: --------------------------------------------------------
+- 08:16:15.093 INFO: --------------------------------------------------------
+- 08:16:15.109 INFO: Started application
+- 08:16:15.109 INFO: Logging to: D:\wamp\www\lohe-negahbani-1.0.0\debug.log
+- 08:16:15.109 INFO: Log level = DEBUG4
+- 08:16:15.109 INFO: Starting Mongoose 3.9c web server
+- 08:16:15.109 INFO: WWW directory: D:\wamp\www\lohe-negahbani-1.0.0\www\payment\public
+- 08:16:15.109 INFO: Index files: index.html,index.php
+- 08:16:15.109 INFO: CGI interpreter: D:\wamp\www\lohe-negahbani-1.0.0\php\php-cgi.exe
+- 08:16:15.109 INFO: CGI pattern: **.php$
+- 08:16:15.109 INFO: Hide files patterns: 
+- 08:16:15.109 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 08:16:15.125 INFO: Web server url: http://127.0.0.1:55961/
+- 08:16:15.156 INFO: remote_debugging_port = 51492
+- 08:16:15.608 DEBUG: Command line string for the browser process: "D:\wamp\www\lohe-negahbani-1.0.0\lohe-negahbani.exe" --no-sandbox --lang=en-US --log-file="D:\wamp\www\lohe-negahbani-1.0.0\debug.log" --remote-debugging-port=51492
+- 08:16:25.000 DEBUG: Command line string for the gpu-process process: "D:\wamp\www\lohe-negahbani-1.0.0\lohe-negahbani.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="D:\wamp\www\lohe-negahbani-1.0.0\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="D:\wamp\www\lohe-negahbani-1.0.0\debug.log" --service-request-channel-token=931A9238D591FD1F85DC6A527952F6C1 --mojo-platform-channel-handle=1424 /prefetch:2
+- 08:16:31.239 DEBUG: App::OnContextInitialized()
+- 08:16:31.239 DEBUG: Window max width/height = 1286/680
+- 08:16:31.239 DEBUG: GetBrowserWindow(): not found, hwnd = 2687614
+- 08:16:31.239 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 08:16:31.239 DEBUG: BrowserWindow::CreateBrowserControl()
+- 08:16:31.317 DEBUG: StoreBrowserWindow(): hwnd = 2687614
+- 08:16:34.126 DEBUG: ClientHandler::OnAfterCreated()
+- 08:16:34.141 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 08:16:35.000 DEBUG: Command line string for the renderer process: "D:\wamp\www\lohe-negahbani-1.0.0\lohe-negahbani.exe" --type=renderer --no-sandbox --primordial-pipe-token=5725F030B17BB3B8A40BB0B5B86B00AB --lang=en-US --lang=en-US --log-file="D:\wamp\www\lohe-negahbani-1.0.0\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=5725F030B17BB3B8A40BB0B5B86B00AB --renderer-client-id=3 --mojo-platform-channel-handle=1620 /prefetch:1
+- 08:16:35.654 DEBUG: OnLoadingStateChange: loading=1, url=
+[0814/081642.085:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 08:16:53.877 DEBUG: OnBrowserCreated()
+- 08:16:57.323 INFO: GET 404 /
+- 08:16:59.288 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55961/
+- 08:17:29.521 DEBUG: WM_DESTROY
+- 08:17:29.521 DEBUG: RemoveBrowserWindow(): hwnd = 2687614
+- 08:17:29.521 INFO: Stopping Mongoose web server
+- 08:17:29.521 DEBUG: Mongoose webserver stopped immediately
+- 08:17:29.537 DEBUG: OnBeforeClose() hwnd=6292118
+- 08:17:29.537 DEBUG: RemoveBrowserWindow(): hwnd = 6292118
+- 08:17:29.537 DEBUG: GetBrowserWindow(): not found, hwnd = 6292118
+- 08:17:29.537 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 08:17:29.537 DEBUG: Calling CefQuitMessageLoop()
+- 08:17:29.631 DEBUG: OnBrowserDestroyed()
+- 08:17:30.801 INFO: Ended application
+- 08:17:30.801 INFO: --------------------------------------------------------
+- 08:17:37.000 INFO: --------------------------------------------------------
+- 08:17:37.000 INFO: Started application
+- 08:17:37.000 INFO: Logging to: D:\wamp\www\lohe-negahbani\debug.log
+- 08:17:37.000 INFO: Log level = DEBUG4
+- 08:17:37.000 INFO: Starting Mongoose 3.9c web server
+- 08:17:37.000 INFO: WWW directory: D:\wamp\www\lohe-negahbani\www\payment\public
+- 08:17:37.000 INFO: Index files: index.html,index.php
+- 08:17:37.000 INFO: CGI interpreter: D:\wamp\www\lohe-negahbani\php\php-cgi.exe
+- 08:17:37.000 INFO: CGI pattern: **.php$
+- 08:17:37.000 INFO: Hide files patterns: 
+- 08:17:37.000 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 08:17:37.000 INFO: Web server url: http://127.0.0.1:55965/
+- 08:17:37.000 INFO: remote_debugging_port = 55004
+- 08:17:37.000 DEBUG: Command line string for the browser process: "D:\wamp\www\lohe-negahbani\lohe-negahbani.exe" --no-sandbox --lang=en-US --log-file="D:\wamp\www\lohe-negahbani\debug.log" --remote-debugging-port=55004
+- 08:17:37.062 DEBUG: App::OnContextInitialized()
+- 08:17:37.062 DEBUG: Window max width/height = 1286/680
+- 08:17:37.062 DEBUG: GetBrowserWindow(): not found, hwnd = 5309166
+- 08:17:37.062 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 08:17:37.062 DEBUG: BrowserWindow::CreateBrowserControl()
+- 08:17:37.062 DEBUG: StoreBrowserWindow(): hwnd = 5309166
+- 08:17:37.015 DEBUG: Command line string for the gpu-process process: "D:\wamp\www\lohe-negahbani\lohe-negahbani.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="D:\wamp\www\lohe-negahbani\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="D:\wamp\www\lohe-negahbani\debug.log" --service-request-channel-token=6233F79B73079E36F95AF4617CEE94A7 --mojo-platform-channel-handle=1348 /prefetch:2
+- 08:17:37.109 DEBUG: ClientHandler::OnAfterCreated()
+- 08:17:37.109 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 08:17:37.125 DEBUG: OnLoadingStateChange: loading=1, url=
+- 08:17:37.000 DEBUG: Command line string for the renderer process: "D:\wamp\www\lohe-negahbani\lohe-negahbani.exe" --type=renderer --no-sandbox --primordial-pipe-token=1F3348C12F53221751B380AA8235F402 --lang=en-US --lang=en-US --log-file="D:\wamp\www\lohe-negahbani\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=1F3348C12F53221751B380AA8235F402 --renderer-client-id=3 --mojo-platform-channel-handle=1648 /prefetch:1
+- 08:17:37.047 DEBUG: OnBrowserCreated()
+[0814/081737.535:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 08:17:37.218 INFO: GET 404 /
+- 08:17:37.249 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55965/
+- 08:17:39.700 DEBUG: WM_DESTROY
+- 08:17:39.700 DEBUG: RemoveBrowserWindow(): hwnd = 5309166
+- 08:17:39.700 INFO: Stopping Mongoose web server
+- 08:17:39.700 DEBUG: Mongoose webserver stopped immediately
+- 08:17:39.700 DEBUG: OnBeforeClose() hwnd=1246630
+- 08:17:39.700 DEBUG: RemoveBrowserWindow(): hwnd = 1246630
+- 08:17:39.700 DEBUG: GetBrowserWindow(): not found, hwnd = 1246630
+- 08:17:39.700 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 08:17:39.700 DEBUG: Calling CefQuitMessageLoop()
+- 08:17:39.981 INFO: Ended application
+- 08:17:39.981 INFO: --------------------------------------------------------
+- 08:18:02.000 INFO: --------------------------------------------------------
+- 08:18:02.000 INFO: Started application
+- 08:18:02.000 INFO: Logging to: D:\wamp\www\lohe-negahbani\debug.log
+- 08:18:02.000 INFO: Log level = DEBUG4
+- 08:18:02.000 INFO: Starting Mongoose 3.9c web server
+- 08:18:02.000 INFO: WWW directory: D:\wamp\www\lohe-negahbani\www\public
+- 08:18:02.000 INFO: Index files: index.php
+- 08:18:02.000 INFO: CGI interpreter: D:\wamp\www\lohe-negahbani\php\php-cgi.exe
+- 08:18:02.000 INFO: CGI pattern: **.php$
+- 08:18:02.000 INFO: Hide files patterns: 
+- 08:18:02.000 INFO: CGI environment variables set: TMP=C:\Users\Farhoudi\AppData\Local\Temp\,TEMP=C:\Users\Farhoudi\AppData\Local\Temp\,TMPDIR=C:\Users\Farhoudi\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 08:18:02.000 INFO: Web server url: http://127.0.0.1:55967/
+- 08:18:02.000 INFO: remote_debugging_port = 52331
+- 08:18:02.000 DEBUG: Command line string for the browser process: "D:\wamp\www\lohe-negahbani\lohe-negahbani.exe" --no-sandbox --lang=en-US --log-file="D:\wamp\www\lohe-negahbani\debug.log" --remote-debugging-port=52331
+- 08:18:02.062 DEBUG: App::OnContextInitialized()
+- 08:18:02.062 DEBUG: Window max width/height = 1286/680
+- 08:18:02.062 DEBUG: GetBrowserWindow(): not found, hwnd = 460412
+- 08:18:02.062 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 08:18:02.062 DEBUG: BrowserWindow::CreateBrowserControl()
+- 08:18:02.062 DEBUG: StoreBrowserWindow(): hwnd = 460412
+- 08:18:02.093 DEBUG: ClientHandler::OnAfterCreated()
+- 08:18:02.093 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 08:18:03.000 DEBUG: Command line string for the gpu-process process: "D:\wamp\www\lohe-negahbani\lohe-negahbani.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="D:\wamp\www\lohe-negahbani\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x68e0 --gpu-driver-vendor="ATI Technologies Inc." --gpu-driver-version=8.723.8.2000 --gpu-driver-date=9-20-2010 --lang=en-US --log-file="D:\wamp\www\lohe-negahbani\debug.log" --service-request-channel-token=A45A2ABB33E1DEE1336C421F31701B9C --mojo-platform-channel-handle=1364 /prefetch:2
+- 08:18:03.109 DEBUG: OnLoadingStateChange: loading=1, url=
+- 08:18:03.000 DEBUG: Command line string for the renderer process: "D:\wamp\www\lohe-negahbani\lohe-negahbani.exe" --type=renderer --no-sandbox --primordial-pipe-token=21461E53EAD94EB164E234D14F4AC4EF --lang=en-US --lang=en-US --log-file="D:\wamp\www\lohe-negahbani\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=21461E53EAD94EB164E234D14F4AC4EF --renderer-client-id=3 --mojo-platform-channel-handle=1616 /prefetch:1
+- 08:18:03.047 DEBUG: OnBrowserCreated()
+[0814/081803.112:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 08:18:05.511 INFO: GET 200 /vendor/admin-lte-rtl-2.3.3/css/skins/_all-skins.min.css
+- 08:18:05.511 INFO: GET 200 /vendor/bootstrap-rtl-3.3.6/css/bootstrap.min.css
+- 08:18:05.542 INFO: GET 200 /css/fonts.css
+- 08:18:05.589 INFO: GET 200 /vendor/select2-4.0.2/css/select2.min.css
+- 08:18:05.605 INFO: GET 200 /vendor/font-awesome-4.7.0/css/font-awesome.min.css
+- 08:18:05.636 INFO: GET 200 /css/style.css
+- 08:18:05.636 INFO: GET 200 /vendor/admin-lte-rtl-2.3.3/css/AdminLTE.min.css
+- 08:18:05.667 INFO: GET 200 /vendor/ionicons-2.0.1/css/ionicons.min.css
+- 08:18:05.714 INFO: GET 200 /
+- 08:18:06.260 DEBUG: OnContextCreated()
+- 08:18:06.494 INFO: GET 200 /vendor/jquery-1.12.0/jquery.min.js
+- 08:18:06.510 INFO: GET 200 /vendor/select2-4.0.2/js/i18n/fa.js
+- 08:18:06.510 INFO: GET 200 /vendor/icheck-1.0.2/icheck.min.js
+- 08:18:06.525 INFO: GET 200 /vendor/select2-4.0.2/js/select2.min.js
+- 08:18:06.556 INFO: GET 200 /vendor/bootstrap-rtl-3.3.6/js/bootstrap.min.js
+- 08:18:06.572 INFO: GET 200 /vendor/admin-lte-rtl-2.3.3/js/app.js
+- 08:18:06.681 INFO: GET 200 /dist/fonts/IRANSansWeb.woff2
+- 08:18:06.681 INFO: GET 200 /vendor/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0
+- 08:18:06.697 INFO: GET 200 /dist/fonts/IRANSansWeb_Bold.woff2
+- 08:18:06.759 INFO: GET 200 /dist/fonts/BYekan.woff
+- 08:18:06.790 INFO: GET 200 /dist/fonts/IRANSansWeb_Light.woff2
+- 08:18:07.571 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55967/
+- 08:18:10.597 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:55967/
+- 08:18:10.956 DEBUG: OnContextCreated()
+- 08:18:11.112 INFO: GET 200 /users
+- 08:18:11.393 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55967/users
+- 08:18:12.984 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:55967/users
+- 08:18:13.468 DEBUG: OnContextCreated()
+- 08:18:13.608 INFO: GET 200 /users/import
+- 08:18:13.889 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55967/users/import
+- 08:18:15.480 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:55967/users/import
+- 08:18:15.621 DEBUG: OnContextCreated()
+- 08:18:15.761 INFO: GET 200 /guard/weekly
+- 08:18:15.948 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55967/guard/weekly
+- 08:18:16.587 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:55967/guard/weekly
+- 08:18:16.697 DEBUG: OnContextCreated()
+- 08:18:16.837 INFO: GET 200 /about
+- 08:18:16.946 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:55967/about
+- 08:18:19.019 DEBUG: WM_DESTROY
+- 08:18:19.019 DEBUG: RemoveBrowserWindow(): hwnd = 460412
+- 08:18:19.019 INFO: Stopping Mongoose web server
+- 08:18:19.019 DEBUG: Mongoose webserver stopped immediately
+- 08:18:19.019 DEBUG: OnBeforeClose() hwnd=263878
+- 08:18:19.019 DEBUG: RemoveBrowserWindow(): hwnd = 263878
+- 08:18:19.019 DEBUG: GetBrowserWindow(): not found, hwnd = 263878
+- 08:18:19.019 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 08:18:19.019 DEBUG: Calling CefQuitMessageLoop()
+- 08:18:20.721 INFO: Ended application
+- 08:18:20.721 INFO: --------------------------------------------------------

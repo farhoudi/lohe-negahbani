@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>لوح نگهبانی - داشبورد</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <link rel="icon" type="image/png" href="http://127.0.0.1:55967/dist/favicon.png"/>
+
+    <link rel="stylesheet" href="http://127.0.0.1:55967/vendor/bootstrap-rtl-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:55967/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:55967/vendor/select2-4.0.2/css/select2.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:55967/vendor/admin-lte-rtl-2.3.3/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:55967/vendor/admin-lte-rtl-2.3.3/css/skins/_all-skins.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="http://127.0.0.1:55967/vendor/ionicons-2.0.1/css/ionicons.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="http://127.0.0.1:55967/css/fonts.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="http://127.0.0.1:55967/css/style.css">
+
+    <style>
+        body, .main-header .logo { font-family: IRANSans, Tahoma, Arial, serif; }
+        body.sidebar-collapse .logo b { font-size: x-small; }
+        h1, h2, h3, h4, h5, h6 { font-family: byekan, Tahoma, Arial, serif; }
+    </style>
+
+        <style>
+        #weekly_guard_table td, #weekly_guard_table th {
+            text-align: center;
+        }
+        .popover{
+            min-width: 250px !important; /* Max Width of the popover (depending on the container!) */
+        }
+
+        #users_table tbody, #users_table thead { display: block; width: 100%; }
+        #users_table tr { width: 100%; }
+        #users_table td { width: 14%; }
+        #users_table td { text-align: center !important; }
+        #users_table tbody {
+            height: 200px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+
+        <script>
+        function fillGuardInfo(guardId, guardUserFullName, guardUserPersonnelId, guardUserGuardsCount, guardUserFreeOfWar, guardUserMarried, guardUserLongDistance) {
+            var guardIdInputs = document.getElementsByClassName('guard_id_inputs');
+            for (var i = 0; i < guardIdInputs.length; i++) {
+                guardIdInputs[i].value = guardId;
+            }
+            document.getElementById('info_guard_user_full_name').innerHTML = guardUserFullName;
+            document.getElementById('info_guard_user_personnel_id').innerHTML = guardUserPersonnelId;
+            document.getElementById('info_guard_user_guards_count').innerHTML = guardUserGuardsCount;
+            document.getElementById('info_guard_user_free_of_war').innerHTML = guardUserFreeOfWar;
+            document.getElementById('info_guard_user_married').innerHTML = guardUserMarried;
+            document.getElementById('info_guard_user_long_distance').innerHTML = guardUserLongDistance;
+        }
+    </script>
+</head>
+
+<body class="skin-blue sidebar-mini">
+
+    <div class="wrapper">
+        <!-- Main Header -->
+        <header class="main-header">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <b>لوح نگهبانی</b>
+            </a>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- User Account Menu -->
+                        <li class="dropdown user user-menu">
+                            <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- The user image in the navbar-->
+                                
+                                     
+                                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- The user image in the menu -->
+                                <li class="user-header" style="height: auto;">
+                                    
+                                         
+                                    <p>
+
+
+                                    </p>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    
+                                        
+                                    
+                                    <div class="pull-right">
+                                        <a href="http://127.0.0.1:55967/logout" class="btn btn-default btn-flat"
+                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            خروج
+                                        </a>
+                                        <form id="logout-form" action="http://127.0.0.1:55967/logout" method="POST" style="display: none;">
+                                            <input type="hidden" name="_token" value="1aJreYQ6MOtoG87k817mQKxGP0xEGrx9Kd4a4610">
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar" id="sidebar-wrapper">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel">
+            
+                
+                     
+            
+
+        </div>
+
+        <!-- search form (Optional) -->
+        
+            
+                
+                
+                    
+                        
+                    
+                
+            
+        
+        <!-- Sidebar Menu -->
+
+        <ul class="sidebar-menu">
+            <li class="">
+    <a href="http://127.0.0.1:55967"><i class="fa fa-dashboard"></i><span>داشبورد</span></a>
+</li>
+
+<li class=" treeview">
+    <a href="#">
+        <i class="fa fa-users"></i> <span>نفرات</span>
+        <span class="pull-left-container">
+            <i class="fa fa-angle-left pull-left"></i>
+        </span>
+    </a>
+    <ul class="treeview-menu">
+        <li class="">
+            <a href="http://127.0.0.1:55967/users"><i class="fa fa-users"></i><span>لیست</span></a>
+        </li>
+        <li class="">
+            <a href="http://127.0.0.1:55967/users/import"><i class="fa fa-user"></i><span>ورودی از فایل excel</span></a>
+        </li>
+        
+    </ul>
+</li>
+
+<li class=" treeview">
+    <a href="#">
+        <i class="fa fa-users"></i> <span>تعیین نگهبانی</span>
+        <span class="pull-left-container">
+            <i class="fa fa-angle-left pull-left"></i>
+        </span>
+    </a>
+    <ul class="treeview-menu">
+        <li class="">
+            <a href="http://127.0.0.1:55967/guard/weekly"><i class="fa fa-users"></i><span>هفتگی</span></a>
+        </li>
+        
+    </ul>
+</li>
+
+<li class=" treeview">
+    <a href="#">
+        <i class="fa fa-table"></i> <span>لوح نگهبانی</span>
+        <span class="pull-left-container">
+            <i class="fa fa-angle-left pull-left"></i>
+        </span>
+    </a>
+    <ul class="treeview-menu">
+        <li class="">
+            <a href="http://127.0.0.1:55967/guardian_table/weekly"><i class="fa fa-users"></i><span>نگهبانی هفتگی</span></a>
+        </li>
+        
+    </ul>
+</li>
+
+<li class="">
+    <a href="http://127.0.0.1:55967/about"><i class="fa fa-info"></i><span>درباره نرم افزار</span></a>
+</li>
+
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            
+            <div class="flash-message">
+                                                                                                                                                                            </div> <!-- end .flash-message -->
+
+                <section class="content-header">
+        <h1 class="pull-right">داشبورد</h1>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <div class="content">
+
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3>لوح نگهبانی امروز 1396-05-23</h3>
+            </div>
+            <div class="box-body">
+
+                
+                <table class="table table-striped table-responsive" id="weekly_guard_table">
+                    <thead>
+                    <tr>
+                        <th>پست</th>
+                        <th>نگهبان ها</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                            <tr>
+                            <td>زاغه</td>
+                            <td>
+                                <ul class="nav nav-stacked">
+
+                                                                    </ul>
+
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>آسایشگاه</td>
+                            <td>
+                                <ul class="nav nav-stacked">
+
+                                                                    </ul>
+
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>سرویس بهداشتی</td>
+                            <td>
+                                <ul class="nav nav-stacked">
+
+                                                                    </ul>
+
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>گروهبان نگهبان</td>
+                            <td>
+                                <ul class="nav nav-stacked">
+
+                                                                    </ul>
+
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td>معاون گروهبان نگهبان</td>
+                            <td>
+                                <ul class="nav nav-stacked">
+
+                                                                    </ul>
+
+                            </td>
+                        </tr>
+                                        </tbody>
+                </table>
+
+
+
+                <div class="modal modal-default fade" id="modal-guard-info" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title">اطلاعات فرد</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td>نام و نام خانوادگی</td>
+                                            <th id="info_guard_user_full_name"></th>
+                                        </tr>
+                                        <tr>
+                                            <td>شماره پرسنلی</td>
+                                            <th id="info_guard_user_personnel_id"></th>
+                                        </tr>
+                                        <tr>
+                                            <td>تعداد پست های تعیین شده</td>
+                                            <th id="info_guard_user_guards_count"></th>
+                                        </tr>
+                                        <tr>
+                                            <td>معاف از رزم</td>
+                                            <th id="info_guard_user_free_of_war"></th>
+                                        </tr>
+                                        <tr>
+                                            <td>متاهل</td>
+                                            <th id="info_guard_user_married"></th>
+                                        </tr>
+                                        <tr>
+                                            <td>راه دور</td>
+                                            <th id="info_guard_user_long_distance"></th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title" data-toggle="collapse" href="#collapse-users" style="cursor: pointer;">
+                                                <a>تعویض پست</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse-users" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <table class="table" id="users_table">
+                                                    <thead>
+                                                    <tr>
+                                                        <td>نام و نام خانوادگی</td>
+                                                        <td>شماره پرسنلی</td>
+                                                        <td>تعداد پست</td>
+                                                        <td>معاف از رزم</td>
+                                                        <td>متاهل</td>
+                                                        <td>راه دور</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                                                                        </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                
+
+            </div>
+        </div>
+
+
+    </div>
+        </div>
+
+        <!-- Main Footer -->
+        <footer class="main-footer" style="max-height: 100px;text-align: center">
+            <strong>کلیه حقوق مادی و معنوی محفوظ می باشد.</strong>
+        </footer>
+
+    </div>
+
+
+    <!-- jQuery 2.1.4 -->
+    <script src="http://127.0.0.1:55967/vendor/jquery-1.12.0/jquery.min.js"></script>
+    
+    <script src="http://127.0.0.1:55967/vendor/bootstrap-rtl-3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://127.0.0.1:55967/vendor/select2-4.0.2/js/select2.min.js"></script>
+    <script src="http://127.0.0.1:55967/vendor/select2-4.0.2/js/i18n/fa.js"></script>
+    <script src="http://127.0.0.1:55967/vendor/icheck-1.0.2/icheck.min.js"></script>
+
+    <!-- AdminLTE App -->
+    
+    <script src="http://127.0.0.1:55967/vendor/admin-lte-rtl-2.3.3/js/app.js"></script>
+
+    <!-- Datatables -->
+    
+    
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+        $('.multiselect').select2({
+            dir: 'rtl',
+            language: 'fa'
+        });
+    </script>
+
+        <script>
+        $('.treeview').on('click', function (evt) {
+            var angle = $(this).find('span').find('i.pull-left');
+            if ($(this).hasClass('active')) {
+                angle.removeClass('fa-angle-down');
+                angle.addClass('fa-angle-left');
+            } else {
+                angle.removeClass('fa-angle-left');
+                angle.addClass('fa-angle-down');
+            }
+        });
+    </script>
+</body>
+</html>
