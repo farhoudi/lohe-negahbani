@@ -25,10 +25,34 @@ class UserController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $users = $this->userRepository->sortable()->paginate();
+        $users = $this->userRepository->with('guards')->sortable()->paginate(200);
+        if (\request()->has('sort') && \request()->input('sort') == 'guards_count') {
+            if (\request()->has('order') && \request()->input('order') == 'desc') {
+                $users = $users->sort(function ($a, $b) {
+                    if ($a->guards->count() < $b->guards->count()) {
+                        return true;
+                    } else if ($a->guards->count() > $b->guards->count()) {
+                        return false;
+                    } else {
+                        return $a->personnel_id > $b->personnel_id;
+                    }
+                });
+            } else {
+                $users = $users->sort(function ($a, $b) {
+                    if ($a->guards->count() > $b->guards->count()) {
+                        return true;
+                    } else if ($a->guards->count() < $b->guards->count()) {
+                        return false;
+                    } else {
+                        return $a->personnel_id > $b->personnel_id;
+                    }
+                });
+            }
+        }
 
         return view('users.index', [
             'users' => $users,
+            'i' => 1,
         ]);
     }
 
@@ -81,7 +105,7 @@ class UserController extends Controller {
         }
 
         $this->userRepository->create($userData);
-        $request->session()->flash('success', 'اطلاعات نفر با موفقیت ثبت شد.');
+        session()->flash('success', 'اطلاعات نفر با موفقیت ثبت شد.');
         return redirect()->route('users.index');
     }
 
@@ -134,8 +158,7 @@ class UserController extends Controller {
         $user->extra_description = $request->has('extra_description') ? $request->input('extra_description') : null;
         $user->save();
 
-        $request->session()->flash('success', 'اطلاعات نفر با موفقیت بروز شد.');
-
+        session()->flash('success', 'اطلاعات نفر با موفقیت بروز شد.');
         return redirect()->route('users.index');
     }
 
@@ -149,7 +172,6 @@ class UserController extends Controller {
         $user->delete();
 
         session()->flash('success', 'اطلاعات نفر با موفقیت حذف شد.');
-
         return redirect()->route('users.index');
     }
 
@@ -218,6 +240,8 @@ class UserController extends Controller {
                         'extra_description' => !empty($user['extra_description']) ? $user['extra_description'] : null,
                     ]);
                 }
+                session()->flash('success', 'اطلاعات افراد با موفقیت به نرم افزار وارد شدند!');
+                return redirect()->route('users.index');
             }
         }
 

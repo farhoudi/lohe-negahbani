@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('page-header'){{ trans('dashboard.dashboard') }}@endsection
+@section('page-header'){{ trans('تعیین نگهبانی هفتگی') }}@endsection
 
-@section('page_title'){{ trans('dashboard.dashboard') }}@endsection
+@section('page_title'){{ trans('تعیین نگهبانی هفتگی') }}@endsection
 
 @section('content')
     <section class="content-header">
-        <h1 class="pull-right">{{ trans('dashboard.dashboard') }}</h1>
+        <h1 class="pull-right">{{ trans('تعیین نگهبانی هفتگی') }}</h1>
     </section>
 
     <div class="clearfix"></div>
@@ -30,7 +30,7 @@
                         <th></th>
                         <th>
                             <label>
-                                {{ Form::checkbox('weekday[0]', $weekDays[0]['date'], $weekDays[0]['enabled'], ['disabled' => !$weekDays[0]['enabled']]) }}
+                                {{ Form::checkbox('weekday[0]', $weekDays[0]['date'], $weekDays[0]['enabled']/*, ['disabled' => !$weekDays[0]['enabled']]*/) }}
                                 <span>شنبه</span>
                                 <br>
                                 {{ $weekDays[0]['jDate'] }}
@@ -38,7 +38,7 @@
                         </th>
                         <th>
                             <label>
-                                {{ Form::checkbox('weekday[1]', $weekDays[1]['date'], $weekDays[1]['enabled'], ['disabled' => !$weekDays[1]['enabled']]) }}
+                                {{ Form::checkbox('weekday[1]', $weekDays[1]['date'], $weekDays[1]['enabled']/*, ['disabled' => !$weekDays[1]['enabled']]*/) }}
                                 <span>یک شنبه</span>
                                 <br>
                                 {{ $weekDays[1]['jDate'] }}
@@ -46,7 +46,7 @@
                         </th>
                         <th>
                             <label>
-                                {{ Form::checkbox('weekday[2]', $weekDays[2]['date'], $weekDays[2]['enabled'], ['disabled' => !$weekDays[2]['enabled']]) }}
+                                {{ Form::checkbox('weekday[2]', $weekDays[2]['date'], $weekDays[2]['enabled']/*, ['disabled' => !$weekDays[2]['enabled']]*/) }}
                                 <span>دو شنبه</span>
                                 <br>
                                 {{ $weekDays[2]['jDate'] }}
@@ -54,7 +54,7 @@
                         </th>
                         <th>
                             <label>
-                                {{ Form::checkbox('weekday[3]', $weekDays[3]['date'], $weekDays[3]['enabled'], ['disabled' => !$weekDays[3]['enabled']]) }}
+                                {{ Form::checkbox('weekday[3]', $weekDays[3]['date'], $weekDays[3]['enabled']/*, ['disabled' => !$weekDays[3]['enabled']]*/) }}
                                 <span>سه شنبه</span>
                                 <br>
                                 {{ $weekDays[3]['jDate'] }}
@@ -62,7 +62,7 @@
                         </th>
                         <th>
                             <label>
-                                {{ Form::checkbox('weekday[4]', $weekDays[4]['date'], $weekDays[4]['enabled'], ['disabled' => !$weekDays[4]['enabled']]) }}
+                                {{ Form::checkbox('weekday[4]', $weekDays[4]['date'], $weekDays[4]['enabled']/*, ['disabled' => !$weekDays[4]['enabled']]*/) }}
                                 <span>چهار شنبه</span>
                                 <br>
                                 {{ $weekDays[4]['jDate'] }}
@@ -70,7 +70,7 @@
                         </th>
                         <th>
                             <label>
-                                {{ Form::checkbox('weekday[5]', $weekDays[5]['date'], $weekDays[5]['enabled'], ['disabled' => !$weekDays[5]['enabled']]) }}
+                                {{ Form::checkbox('weekday[5]', $weekDays[5]['date'], $weekDays[5]['enabled']/*, ['disabled' => !$weekDays[5]['enabled']]*/) }}
                                 <span>پنج شنبه</span>
                                 <br>
                                 {{ $weekDays[5]['jDate'] }}
@@ -78,7 +78,7 @@
                         </th>
                         <th>
                             <label>
-                                {{ Form::checkbox('weekday[6]', $weekDays[6]['date'], $weekDays[6]['enabled'], ['disabled' => !$weekDays[6]['enabled']]) }}
+                                {{ Form::checkbox('weekday[6]', $weekDays[6]['date'], $weekDays[6]['enabled']/*, ['disabled' => !$weekDays[6]['enabled']]*/) }}
                                 <span>جمعه</span>
                                 <br>
                                 {{ $weekDays[6]['jDate'] }}
@@ -87,16 +87,18 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th>تعداد نگهبان</th>
-                        <td>{{ Form::text('guards_number[0]', 11, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
-                        <td>{{ Form::text('guards_number[1]', 11, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
-                        <td>{{ Form::text('guards_number[2]', 11, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
-                        <td>{{ Form::text('guards_number[3]', 11, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
-                        <td>{{ Form::text('guards_number[4]', 11, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
-                        <td>{{ Form::text('guards_number[5]', 11, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
-                        <td>{{ Form::text('guards_number[6]', 4, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
-                    </tr>
+                    @foreach($guardTypes as $guardType)
+                        <tr>
+                            <th>تعداد نگهبان {{ $guardType->name }}</th>
+                            <td>{{ Form::text('guards_number[0]' . '[' . $guardType->id . ']', $guardType->guards_number, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
+                            <td>{{ Form::text('guards_number[1]' . '[' . $guardType->id . ']', $guardType->guards_number, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
+                            <td>{{ Form::text('guards_number[2]' . '[' . $guardType->id . ']', $guardType->guards_number, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
+                            <td>{{ Form::text('guards_number[3]' . '[' . $guardType->id . ']', $guardType->guards_number, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
+                            <td>{{ Form::text('guards_number[4]' . '[' . $guardType->id . ']', $guardType->guards_number, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
+                            <td>{{ Form::text('guards_number[5]' . '[' . $guardType->id . ']', $guardType->guards_number, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
+                            <td>{{ Form::text('guards_number[6]' . '[' . $guardType->id . ']', $guardType->guards_number, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>
+                        </tr>
+                    @endforeach
                     <tr>
                         <th>مسافت نگهبان</th>
                         <td>{{ Form::select('guard_distance[0]', $distanceTypes, null, ['type' => 'text', 'class' => 'form-control', 'style' => 'width: 120px; display: inline-block;']) }}</td>

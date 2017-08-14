@@ -21,31 +21,49 @@ class GuardTypeSeeder extends Seeder {
             [
                 'name' => 'زاغه',
                 'alias' => 'slum',
+                'guards_number' => 3,
                 'free_of_war' => false,
             ],
             [
                 'name' => 'آسایشگاه',
                 'alias' => 'sanitarium',
+                'guards_number' => 3,
                 'free_of_war' => true,
             ],
             [
                 'name' => 'سرویس بهداشتی',
                 'alias' => 'wc',
+                'guards_number' => 3,
                 'free_of_war' => true,
             ],
             [
                 'name' => 'گروهبان نگهبان',
                 'alias' => 'sergeant_guardian',
+                'guards_number' => 1,
                 'free_of_war' => true,
             ],
             [
                 'name' => 'معاون گروهبان نگهبان',
                 'alias' => 'sergeant_guardian_assistant',
+                'guards_number' => 1,
                 'free_of_war' => true,
             ],
             [
-                'name' => 'گشتی',
-                'alias' => 'patrol',
+                'name' => 'گشتی داخل',
+                'alias' => 'inside_patrol',
+                'guards_number' => 12,
+                'free_of_war' => false,
+            ],
+            [
+                'name' => 'گشتی خارج',
+                'alias' => 'outside_patrol',
+                'guards_number' => 6,
+                'free_of_war' => false,
+            ],
+            [
+                'name' => 'پاسبخش گشتی',
+                'alias' => 'patrol_watch',
+                'guards_number' => 3,
                 'free_of_war' => false,
             ],
             /*[

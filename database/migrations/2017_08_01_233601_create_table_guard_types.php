@@ -16,6 +16,7 @@ class CreateTableGuardTypes extends Migration {
             $table->increments('id');
             $table->string('name');
             $table->string('alias')->nullable()->default(null);
+            $table->integer('guards_number')->nullable();
             $table->boolean('free_of_war')->default(false);
             //$table->timestamps();
         });

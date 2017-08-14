@@ -11,6 +11,7 @@
         <th>@sortablelink('secretary',  trans('users.secretary'))</th>
         <th>@sortablelink('partaker',  trans('users.partaker'))</th>
         <th>@sortablelink('long_distance',  trans('users.long_distance'))</th>
+        <th>@sortablelink('guards_count',  trans('تعداد پست'))</th>
         <th>@lang('users.extra_description')</th>
         <th>{{ trans('general.actions') }}</th>
     </tr>
@@ -18,16 +19,18 @@
     <tbody>
     @foreach ($users as $key => $user)
         <tr>
-            <td>{!! ($users->currentPage() - 1) * $users->count() + $key + 1 !!}</td>
+{{--            <td>{!! (/*$users->currentPage()*/1 - 1) * $users->count() + $key + 1 !!}</td>--}}
+            <td>{!! $i++ !!}</td>
             <td class="text-center">{{ $user->personnel_id }}</td>
             <td>{{ $user->first_name }}</td>
             <td>{{ $user->last_name }}</td>
-            <td class="text-center">{{ $user->free_of_war }}</td>
-            <td class="text-center">{{ $user->married }}</td>
-            <td class="text-center">{{ $user->senior }}</td>
-            <td class="text-center">{{ $user->secretary }}</td>
-            <td class="text-center">{{ $user->partaker }}</td>
-            <td class="text-center">{{ $user->long_distance }}</td>
+            <td class="text-center">{!! $user->free_of_war ? '<i class="fa fa-check"></i>' : ''  !!}</td>
+            <td class="text-center">{!! $user->married ? '<i class="fa fa-check"></i>' : ''  !!}</td>
+            <td class="text-center">{!! $user->senior ? '<i class="fa fa-check"></i>' : ''  !!}</td>
+            <td class="text-center">{!! $user->secretary ? '<i class="fa fa-check"></i>' : ''  !!}</td>
+            <td class="text-center">{!! $user->partaker ? '<i class="fa fa-check"></i>' : ''  !!}</td>
+            <td class="text-center">{!! $user->long_distance ? '<i class="fa fa-check"></i>' : ''  !!}</td>
+            <td class="text-center">{{ $user->guards->count() }}</td>
             <td>{{ $user->extra_description }}</td>
             <td>
                 <div class='btn-group'>
@@ -41,4 +44,4 @@
     @endforeach
     </tbody>
 </table>
-{{ $users->links() }}
+{{--{{ $users->links() }}--}}

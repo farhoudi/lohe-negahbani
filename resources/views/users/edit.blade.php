@@ -1,8 +1,12 @@
 @extends('layouts.app')
 
+@section('page-header'){{ trans('ویرایش اطلاعات نفر') }}@endsection
+
+@section('page_title'){{ trans('ویرایش اطلاعات نفر') }}@endsection
+
 @section('content')
     <section class="content-header">
-        <h1 class="pull-right">{{ $user->full_name }}</h1>
+        <h1 class="pull-right">{{ 'ویرایش اطلاعات نفر' }}</h1>
     </section>
 
     <div class="clearfix"></div>

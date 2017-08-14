@@ -72,4 +72,12 @@ class User extends Authenticatable {
         return $fullName;
     }
 
+    public function getGuardsCountAttribute() {
+        return !empty($this->guards) ? $this->guards->count() : 0;
+    }
+
+    public function guards() {
+        return $this->hasMany(Guard::class, 'user_id');
+    }
+
 }

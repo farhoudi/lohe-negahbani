@@ -16,7 +16,7 @@ class CreateTableGuardDays extends Migration {
             $table->increments('id');
             $table->date('date');
             $table->integer('guards_number');
-            $table->string('distance_type_id');
+            $table->integer('distance_type_id')->nullable();
             $table->boolean('married')->default(true);
         });
     }

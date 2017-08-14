@@ -2,9 +2,45 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DistanceType;
+use App\Models\Guard;
+use App\Models\GuardDay;
+use App\Models\GuardType;
+use App\Models\User;
+use App\Repositories\JdfRepository;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller {
+
+    /** @var JdfRepository */
+    private $jdfRepository;
+
+    /** @var DistanceType */
+    private $distanceTypeRepository;
+
+    /** @var User */
+    private $userRepository;
+
+    /** @var GuardType */
+    private $guardTypeRepository;
+
+    /** @var GuardDay */
+    private $guardDayRepository;
+
+    /** @var Guard */
+    private $guardRepository;
+
+    public function __construct(JdfRepository $jdfRepository, DistanceType $distanceTypeRepository,
+                                User $userRepository, GuardType $guardTypeRepository,
+                                GuardDay $guardDayRepository, Guard $guardRepository) {
+        $this->jdfRepository = $jdfRepository;
+        $this->distanceTypeRepository = $distanceTypeRepository;
+        $this->userRepository = $userRepository;
+        $this->guardTypeRepository = $guardTypeRepository;
+        $this->guardDayRepository = $guardDayRepository;
+        $this->guardRepository = $guardRepository;
+    }
 
     /**
      * Show the application dashboard.
@@ -13,93 +49,39 @@ class HomeController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function dashboard(Request $request) {
+        $today = date('Y-m-d');
+        $jToday = $this->jdfRepository->date('Y-m-d', strtotime($today));
+        $guardDay = $this->guardDayRepository->where('date', $today)->first();
+        $guardTypes = $this->guardTypeRepository
+            ->whereIn('alias', ['slum', 'sanitarium', 'wc', 'sergeant_guardian', 'sergeant_guardian_assistant'])
+            ->get();
+        if (!empty($guardDay)) {
+            $guards = $this->guardRepository->where('day_id', $guardDay->id)->get();
+        } else {
+            $guards = new Collection();
+        }
+        $users = $this->userRepository->with(['guards.guard_type', 'guards.day'])->get();
+        $users = $users->sort(function ($a, $b) {
+            if ($a->guards->count() > $b->guards->count()) {
+                return true;
+            } else if ($a->guards->count() < $b->guards->count()) {
+                return false;
+            } else {
+                return $a->personnel_id > $b->personnel_id;
+            }
+        });
 
 
         return view('dashboard', [
-        ]);
-    }
-
-    public function home(Request $request) {
-        $featuredCourses = $this->courseRepository->orderBy('created_at', 'desc')->limit(4)->where(['featured' => true])->all();
-        $bestCourses = $this->courseRepository->orderBy('created_at', 'desc')->limit(4)->where(['best' => true])->all();
-        $mostVisitedCourses = $this->courseRepository->orderBy('created_at', 'desc')->limit(4)->where(['most_visited' => true])->all();
-        $newestCourses = $this->courseRepository->orderBy('created_at', 'desc')->limit(4)->all();
-        $parentCategories = $this->categoryRepository->whereNull('parent_id')->all();
-        foreach ($parentCategories as $category) {
-            if (!empty($category->icon160x160)) {
-                $category->setAttribute('icon', str_replace(basename($category->icon), '160x160_' . basename($category->icon), $category->getOriginal('icon')));
-            }
-        }
-
-        foreach ($featuredCourses as $course) {
-            if (!empty($course->cover)) {
-                $course->cover = str_replace(basename($course->cover), '400x200_' . basename($course->cover), $course->getOriginal('cover'));
-            }
-        }
-        foreach ($bestCourses as $course) {
-            if (!empty($course->cover)) {
-                $course->cover = str_replace(basename($course->cover), '400x200_' . basename($course->cover), $course->getOriginal('cover'));
-            }
-        }
-        foreach ($mostVisitedCourses as $course) {
-            if (!empty($course->cover)) {
-                $course->cover = str_replace(basename($course->cover), '400x200_' . basename($course->cover), $course->getOriginal('cover'));
-            }
-        }
-        foreach ($newestCourses as $course) {
-            if (!empty($course->cover)) {
-                $course->cover = str_replace(basename($course->cover), '400x200_' . basename($course->cover), $course->getOriginal('cover'));
-            }
-        }
-
-        return view('home', [
-            'featuredCourses' => $featuredCourses,
-            'bestCourses' => $bestCourses,
-            'mostVisitedCourses' => $mostVisitedCourses,
-            'newestCourses' => $newestCourses,
-            'parentCategories' => $parentCategories,
+            'guards' => $guards,
+            'guardTypes' => $guardTypes,
+            'jToday' => $jToday,
+            'users' => $users,
         ]);
     }
 
     public function about(Request $request) {
         return view('home.about');
-    }
-
-    public function contact(Request $request) {
-        return view('home.contact');
-    }
-
-    public function do_contact(Request $request) {
-        $this->validate($request, Feedback::$rules + ['g-recaptcha-response' => 'required|recaptcha']);
-        $input = $request->all();
-
-        $feedbackData = [
-            'name' => $input['name'],
-            'email' => $input['email'],
-            'phone' => $input['phone'],
-            'message' => $input['message'],
-        ];
-        if (!empty($request->user())) {
-            $feedbackData['user_id'] = $request->user()->id;
-        }
-        $this->feedbackRepository->create($feedbackData);
-
-        event(new FeedbackSent());
-
-        Flash::success('پیام شما با موفقیت ارسال شد.');
-        return redirect()->back();
-    }
-
-    public function terms(Request $request) {
-        return view('home.terms');
-    }
-
-    public function search(Request $request) {
-        return view('home.search');
-    }
-
-    public function course(Request $request) {
-        return view('home.course');
     }
 
 }

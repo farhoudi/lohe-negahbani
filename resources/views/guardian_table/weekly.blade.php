@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('page-header'){{ trans('dashboard.dashboard') }}@endsection
+@section('page-header'){{ trans('لوح نگهبانی هفتگی') }}@endsection
 
-@section('page_title'){{ trans('dashboard.dashboard') }}@endsection
+@section('page_title'){{ trans('لوح نگهبانی هفتگی') }}@endsection
 
 @section('content')
     <section class="content-header">
-        <h1 class="pull-right">{{ trans('dashboard.dashboard') }}</h1>
+        <h1 class="pull-right">{{ trans('لوح نگهبانی هفتگی') }}</h1>
     </section>
 
     <div class="clearfix"></div>
@@ -14,51 +14,61 @@
     <div class="content">
 
         <div class="box box-primary">
-            <div class="box-header">
-                <h3>لوح نگهبانی امروز {{ $jToday }}</h3>
-            </div>
             <div class="box-body">
+                <a href="{{ route('guardian_table.weekly', ['week_diff' => request()->input('week_diff') - 1]) }}" class="col-md-3 btn btn-info">هفته قبل</a>
+                <span class="col-md-6 btn btn-default">از {{ $jWeekStart }} تا {{ $jWeekEnd }}</span>
+                <a href="{{ route('guardian_table.weekly', ['week_diff' => request()->input('week_diff') + 1]) }}" class="col-md-3 btn btn-info">هفته بعد</a>
+            </div>
+        </div>
 
+        <div class="box box-primary">
+            <div class="box-body">
                 {{--{!! Form::open(['url' => route('guard.weekly', ['week_diff' => request()->input('week_diff')]), 'method' => 'post'])  !!}--}}
                 <table class="table table-striped table-responsive" id="weekly_guard_table">
                     <thead>
                     <tr>
                         <th>پست</th>
-                        <th>نگهبان ها</th>
+                        @foreach ($weekDays as $weekDay)
+                            <th>
+                                <label>
+                                    <span>{{ $weekDay['jWeekdayName'] }}</span>
+                                    <br>
+                                    {{ $weekDay['jDate'] }}
+                                </label>
+                            </th>
+                        @endforeach
                     </tr>
                     </thead>
                     <tbody>
                     @foreach ($guardTypes as $guardType)
                         <tr>
                             <td>{{ $guardType->name }}</td>
-                            <td>
-                                <ul class="nav nav-stacked">
+                            @foreach ($weekDays as $weekDay)
+                                <td>
+                                    <ul class="nav nav-stacked">
 
-                                    @if (!empty($guards) && $guards->count() > 0)
-                                        @foreach ($guards->where('guard_type_id', $guardType->id)->all() as $guard)
-                                            <li style="display: inline-block; border: none;">
-                                                <a>
-                                                    <i class="fa fa-info-circle"
-                                                       data-toggle="modal"
-                                                       data-target="#modal-guard-info"
-                                                       onclick="fillGuardInfo('{{ $guard->id }}', '{{ $guard->user->full_name }}', '{{ $guard->user->personnel_id }}',
-                                                               '{{ $guard->user->guards->count() }}', '<i class=\'fa fa-{{ $guard->user->free_of_war ? 'check' : 'times' }}\'></i>',
-                                                               '<i class=\'fa fa-{{ $guard->user->married ? 'check' : 'times' }}\'></i>',
-                                                               '<i class=\'fa fa-{{ $guard->user->long_distance ? 'check' : 'times' }}\'></i>');"></i>
-                                                    {{ $guard->user->personnel_id . ': ' . $guard->user->full_name }}
-                                                </a>
-                                            </li>
-                                        @endforeach
-                                    @endif
-                                </ul>
+                                    @foreach ($guards->where('day_id', $weekDay['day_id'])->where('guard_type_id', $guardType->id)->all() as $guard)
+                                        <li>
+                                            <a>
+                                                <i class="fa fa-info-circle"
+                                                   data-toggle="modal"
+                                                   data-target="#modal-guard-info"
+                                                   onclick="fillGuardInfo('{{ $guard->id }}', '{{ $guard->user->full_name }}', '{{ $guard->user->personnel_id }}',
+                                                           '{{ $guard->user->guards->count() }}', '<i class=\'fa fa-{{ $guard->user->free_of_war ? 'check' : 'times' }}\'></i>',
+                                                           '<i class=\'fa fa-{{ $guard->user->married ? 'check' : 'times' }}\'></i>',
+                                                           '<i class=\'fa fa-{{ $guard->user->long_distance ? 'check' : 'times' }}\'></i>');"></i>
+                                                {{ $guard->user->personnel_id . ': ' . $guard->user->full_name }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                    </ul>
 
-                            </td>
+                                </td>
+                            @endforeach
                         </tr>
                     @endforeach
                     </tbody>
                 </table>
-
-
 
                 <div class="modal modal-default fade" id="modal-guard-info" style="display: none;">
                     <div class="modal-dialog">
@@ -156,10 +166,8 @@
                     <!-- /.modal-dialog -->
                 </div>
                 {{--{!! Form::close()  !!}--}}
-
             </div>
         </div>
-
 
     </div>
 @endsection

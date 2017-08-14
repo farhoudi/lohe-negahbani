@@ -39,7 +39,7 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-                <b>آویسا</b>
+                <b>لوح نگهبانی</b>
             </a>
 
             <!-- Header Navbar -->
@@ -137,6 +137,9 @@
     {{--<script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>--}}
 
     <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+        });
         $('.multiselect').select2({
             dir: 'rtl',
             language: 'fa'

@@ -3,12 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>آویسا | حساب کاربری - ورود</title>
-    <meta name="description" content="آموزش‌های متنوع و بروز را در آویسا بیابید و به راحتی بر دانش خود بیافزایید.">
+    <title>لوح نگهبانی | حساب کاربری - ورود</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:site_name" content="آویسا"/>
-    <meta property="og:description" content="آویسا، راه‌کارهای آموزش مجازی"/>
+    <meta property="og:site_name" content="لوح نگهبانی"/>
+    <meta property="og:description" content="لوح نگهبانی"/>
     <link media="all" type="text/css" rel="stylesheet" href="{{ asset('dist/styles/others.css') }}">
     <link media="all" type="text/css" rel="stylesheet" href="{{ asset('dist/styles/main.css') }}">
 </head>

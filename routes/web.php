@@ -18,6 +18,7 @@
 });*/
 
 Route::get('/', ['as' => 'dashboard', 'uses' => 'HomeController@dashboard']);
+Route::get('/about', ['as' => 'about', 'uses' => 'HomeController@about']);
 
 Route::any('/users/import', ['as' => 'users.import', 'uses' => 'UserController@import']);
 //Route::post('/users/import', ['as' => 'users.do_import', 'uses' => 'UserController@do_import']);
@@ -29,3 +30,4 @@ Route::any('/guard/patrol', ['as' => 'guard.patrol', 'uses' => 'GuardController@
 Route::any('/guardian_table/weekly', ['as' => 'guardian_table.weekly', 'uses' => 'GuardianTableController@weekly']);
 Route::any('/guardian_table/midterm', ['as' => 'guardian_table.midterm', 'uses' => 'GuardianTableController@midterm']);
 Route::any('/guardian_table/patrol', ['as' => 'guardian_table.patrol', 'uses' => 'GuardianTableController@patrol']);
+Route::post('/guardian_table/change_guard', ['as' => 'guardian_table.change_guard', 'uses' => 'GuardianTableController@change_guard']);

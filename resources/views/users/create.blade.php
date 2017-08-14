@@ -1,8 +1,12 @@
 @extends('layouts.app')
 
+@section('page-header'){{ trans('افزودن اطلاعات نفر') }}@endsection
+
+@section('page_title'){{ trans('افزودن اطلاعات نفر') }}@endsection
+
 @section('content')
     <section class="content-header">
-        <h1 class="pull-right">{{ trans('users.users') }}</h1>
+        <h1 class="pull-right">{{ trans('افزودن اطلاعات نفر') }}</h1>
     </section>
 
     <div class="clearfix"></div>

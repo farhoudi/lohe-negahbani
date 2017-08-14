@@ -16,7 +16,9 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div>
-                    <p>در این قسمت می توانید اعتبار کاربران را افزایش دهید.</p>
+                    <p>در این قسمت می توانید اطلاعات افراد را از یک فایل excel وارد برنامه کنید.</p>
+                    <p class="alert alert-danger">ابتدا فایل نمونه را دانلود و همانند آن اطلاعات را در فایل excel بچینید.</p>
+                    <a class="btn btn-info" href="{{ asset('sample-input.xlsx') }}">دانلود فایل نمونه</a>
                     {!! Form::open(['route' => ['users.import'], 'method' => 'post', 'files' => true, 'class' => 'form-horizontal']) !!}<!-- Name Field -->
                     <div class="form-group">
                         <label class="control-label col-sm-2 req" for="file">انتخاب فایل excel:</label>
@@ -27,7 +29,7 @@
 
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default" name="action" value="read_file">{{ trans('افزایش') }}</button>
+                            <button type="submit" class="btn btn-default" name="action" value="read_file">{{ trans('ثبت اولیه') }}</button>
                         </div>
                     </div>
                     {!! Form::close() !!}
@@ -39,7 +41,7 @@
             <div class="box box-primary">
                 <div class="box-body">
                     <div>
-                        <p>در این قسمت می توانید اعتبار کاربران را افزایش دهید.</p>
+                        <p>پس از بازبینی و تصحیح میتوانید اطلاعات افراد را به صورت نهایی در نرم افزار ثبت کنید.</p>
                         {!! Form::open(['route' => ['users.import'], 'method' => 'post', 'files' => true, 'class' => 'form-horizontal']) !!}<!-- Name Field -->
                         <table class="table table-responsive" id="users-table">
                             <thead>
